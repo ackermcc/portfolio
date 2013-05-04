@@ -7,6 +7,11 @@ body {
 	line-height: 1.3;
 }
 
+html {
+	max-width: 1500px;
+	margin: auto;
+}
+
 div, span, p, article, header, footer {
 	box-sizing: border-box;
 }
@@ -81,9 +86,11 @@ header {
 
 	#name {
 		width: 100%;
+		/*height: 100%;*/
 		background: #2c3747;
 		text-align: center;
 		font-size: 72px;	
+		position: relative;
 	}
 	#triangle-down {
 		margin: auto;
@@ -96,7 +103,10 @@ header {
 
 		#name p {
 			width: 58%;
-			padding: 200px 0px;
+			position: absolute;
+			top: 33%;
+			left: 22%;
+			/*padding: 200px 0px;*/
 			margin: auto;
 			color: #fff;
 		}

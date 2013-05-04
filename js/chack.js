@@ -1,5 +1,19 @@
 $(window).load(function(){
 
+	var height = $(window).height();
+	var width = $(window).width();
+
+	// HELLO MY NAME IS _____
+
+	$("#name").css('height', height - 250);
+
+	$(window).resize(function() {
+		var height = $(window).height();
+		$("#name").css('height', height - 250);
+	});
+
+	// WAYPOINTS
+
 	$('#nav').waypoint(function(direction) {
 	  if (direction === "down") {
 	  	$('#fixed-nav').animate({ opacity: 1, top: "0px" }, 'fast');
@@ -39,16 +53,14 @@ $(window).load(function(){
 
 
 	// PROJECT CONTAINER
-	
-	var height = $(window).height();
-	var width = $(window).width();
-
-	var wholeHeight = $("html").height();
 
 	$("#project-wrapper").css({
 		height: height,
 		left: width
 	});
+	
+	var wholeHeight = $("html").height();
+
 	$("#project-bg").css({
 		height: wholeHeight
 	});
