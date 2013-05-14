@@ -57,8 +57,31 @@ $(window).load(function(){
 		$(this).addClass("active-sort");
 	});
 
+	$(".all-sort").click(function(){
+		$("#work div.project-thumb").fadeIn();
+	});
+
+	$(".interactive-sort").click(function(){
+		$("#work div.project-thumb").fadeOut();
+		$("#work div.project-thumb.interactive").fadeIn();
+	});
+
+	$(".motion-sort").click(function(){
+		$("#work div.project-thumb").fadeOut();
+		$("#work div.project-thumb.motion").fadeIn();
+	});
+
+	$(".branding-sort").click(function(){
+		$("#work div.project-thumb").fadeOut();
+		$("#work div.project-thumb.branding").fadeIn();
+	});
+
 
 	// PROJECT CONTAINER
+
+	$(".project-thumb-description").dotdotdot({
+		watch: "window"
+	});
 
 	$("#project-wrapper").css({
 		height: height,

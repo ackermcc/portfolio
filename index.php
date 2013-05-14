@@ -23,6 +23,7 @@
   <script type="text/javascript" src="js/waypoints.min.js"></script>
   <script type="text/javascript" src="js/chack.js"></script>
   <script type="text/javascript" src="js/dynamic-loading.js"></script>
+  <script type="text/javascript" src="js/jquery.dotdotdot-1.5.7-packed.js"></script>
   <script type="text/javascript" src="symbolset/webfonts/ss-social.js"></script>
 
 </head>
@@ -83,26 +84,68 @@
 	<article id="work">
 		<h1>Work</h1>
 		<div id="tag-nav">
-			<div class="active-sort">All</div>
-			<div>Interactive</div>
-			<div>Motion</div>
-			<div>Branding</div>
+			<div class="all-sort active-sort">All</div>
+			<div class="interactive-sort">Interactive</div>
+			<div class="motion-sort">Motion</div>
+			<div class="branding-sort">Branding</div>
 		</div>
-		<div class="project-thumb" onclick="loadProject('projectone')">
+		<div class="project-thumb interactive" onclick="loadProject('projecttwo')">
+			<div class="project-thumb-description">
+				<div>Summerfair Cincinnati Survey App</div>
+				<i>This is a couple lines about this cool project that I did that involves this stuff.</i>
+			</div>
+		</div>
+		<div class="project-thumb interactive branding" onclick="loadProject('projectthree')">
+			<div class="project-thumb-description">
+				<div>NiteLife</div>
+				<i>This is a couple lines about this cool project that I did that involves this stuff.</i>
+			</div>
+		</div>
+		<div class="project-thumb interactive" onclick="loadProject('projectone')">
+			<div class="project-thumb-description">
+				<div>Baseball Visualizer</div>
+				<i>Recreation of the Title Sequence for the movie Maverick.</i>
+			</div>
+		</div>
+		<div class="project-thumb interactive" onclick="loadProject('projecttwo')">
+			<div class="project-thumb-description">
+				<div>UC Sustainability</div>
+				<i>This is a couple lines about this cool project that I did that involves this stuff.</i>
+			</div>
+		</div>
+		<div class="project-thumb motion" onclick="loadProject('projectone')">
+			<div class="project-thumb-description">
+				<div>Shutterstock Tutorials</div>
+				<i>Recreation of the Title Sequence for the movie Maverick.</i>
+			</div>
+		</div>
+		<div class="project-thumb motion" onclick="loadProject('projectthree')">
+			<div class="project-thumb-description">
+				<div>Shutterstock Spectrum</div>
+				<i>This is a couple lines about this cool project that I did that involves this stuff.</i>
+			</div>
+		</div>
+		<div class="project-thumb motion" onclick="loadProject('projectone')">
 			<div class="project-thumb-description">
 				<div>Maverick</div>
 				<i>Recreation of the Title Sequence for the movie Maverick.</i>
 			</div>
 		</div>
-		<div class="project-thumb" onclick="loadProject('projecttwo')">
+		<div class="project-thumb motion" onclick="loadProject('projectthree')">
 			<div class="project-thumb-description">
-				<div>Project 2</div>
+				<div>Angry Birds</div>
 				<i>This is a couple lines about this cool project that I did that involves this stuff.</i>
 			</div>
 		</div>
-		<div class="project-thumb" onclick="loadProject('projectthree')">
+		<div class="project-thumb motion" onclick="loadProject('projectthree')">
 			<div class="project-thumb-description">
-				<div>Project 3</div>
+				<div>Step Brothers</div>
+				<i>This is a couple lines about this cool project that I did that involves this stuff.</i>
+			</div>
+		</div>
+		<div class="project-thumb branding" onclick="loadProject('projectthree')">
+			<div class="project-thumb-description">
+				<div>Jotts</div>
 				<i>This is a couple lines about this cool project that I did that involves this stuff.</i>
 			</div>
 		</div>
