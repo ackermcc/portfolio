@@ -83,7 +83,7 @@
 	<article id="work">
 		<h1>Work</h1>
 		<div id="tag-nav">
-			<div>All</div>
+			<div class="active-sort">All</div>
 			<div>Interactive</div>
 			<div>Motion</div>
 			<div>Branding</div>

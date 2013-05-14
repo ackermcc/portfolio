@@ -51,6 +51,12 @@ $(window).load(function(){
 		$("#work-link").addClass("active-nav");
 	}, {offset: 'bottom-in-view'});
 
+	//SORT NAV
+	$("#tag-nav div").click(function(){
+		$("#tag-nav div").removeClass("active-sort");
+		$(this).addClass("active-sort");
+	});
+
 
 	// PROJECT CONTAINER
 
@@ -64,7 +70,7 @@ $(window).load(function(){
 	$("#project-bg").css({
 		height: wholeHeight
 	});
-	$("#work div").click(function(){
+	$("#work div.project-thumb").click(function(){
 		var scrollTop = $(window).scrollTop();
 		$("#project-wrapper").css('top', scrollTop);
 		$("#project-bg").css('display','block').animate({ opacity: 1 }, "slow");

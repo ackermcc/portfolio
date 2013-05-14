@@ -170,15 +170,21 @@ header {
 			}
 
 #tag-nav {
-	width: 30%;
+	width: 316px;
 	text-align: center;
 	margin: 0px auto 40px auto;
 	overflow: auto;
 }
 
+	.active-sort {
+		background: rgba(44,55,71, 1);
+		color: #fff;
+	}
+
 	#tag-nav div {
-		width: 25%;
+		padding: 3px 15px;
 		float: left;
+		cursor: pointer;
 	}
 
 
