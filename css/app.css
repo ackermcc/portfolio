@@ -140,28 +140,34 @@ header {
 
 		#work div.project-thumb {
 			width: 33.3367%;
-			height: 275px;
-			border: solid 10px #f0efef;
+			height: auto;
 			float: left;
-			background: #999;
+			background: red;
 			position: relative;
 			overflow: hidden;
 			cursor: pointer;
 		}
 
+			#work div.project-thumb img {
+				width: 100%;
+				height: auto;
+			}
+
 			#work div.project-thumb:last-child {
 				margin-right: 0px;
 			}
 
+
 		#work .project-thumb-description {
 			position: absolute;
-			bottom: 0;
-			left: -500px;
+			bottom: -300px;
+			left: 0px;
 			opacity: 0;
 			width: 100%;
 			height: 125px;
 			padding: 25px;
-			background: rgba(255,255,255, 0.5);
+			color: #111;
+			background: rgba(255,255,255, 0.85);
 		}
 
 			#work .project-thumb-description div {

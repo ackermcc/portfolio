@@ -89,61 +89,71 @@
 			<div class="motion-sort">Motion</div>
 			<div class="branding-sort">Branding</div>
 		</div>
-		<div class="project-thumb interactive" onclick="loadProject('projecttwo')">
+		<div class="project-thumb interactive" onclick="loadProject('sfc')">
+			<img src="images/title-images/sfc-title.jpg" alt="Summerfair Cincinnati Survey">
 			<div class="project-thumb-description">
 				<div>Summerfair Cincinnati Survey App</div>
 				<i>This is a couple lines about this cool project that I did that involves this stuff.</i>
 			</div>
 		</div>
-		<div class="project-thumb interactive branding" onclick="loadProject('projectthree')">
+		<div class="project-thumb interactive branding" onclick="loadProject('nitelife')">
+			<img src="images/title-images/nitelife-title.jpg" alt="NiteLife - Cincinnati Start Up">
 			<div class="project-thumb-description">
 				<div>NiteLife</div>
 				<i>This is a couple lines about this cool project that I did that involves this stuff.</i>
 			</div>
 		</div>
-		<div class="project-thumb interactive" onclick="loadProject('projectone')">
+		<div class="project-thumb interactive" onclick="loadProject('baseball')">
+			<img src="images/title-images/baseball-title.jpg" alt="Baseball Data Visualizer">
 			<div class="project-thumb-description">
 				<div>Baseball Visualizer</div>
 				<i>Recreation of the Title Sequence for the movie Maverick.</i>
 			</div>
 		</div>
-		<div class="project-thumb interactive" onclick="loadProject('projecttwo')">
+		<div class="project-thumb interactive" onclick="loadProject('sustainability')">
+			<img src="images/title-images/ucs.jpg" alt="University of Cincinnati Sustainability - iPad App">
 			<div class="project-thumb-description">
 				<div>UC Sustainability</div>
 				<i>This is a couple lines about this cool project that I did that involves this stuff.</i>
 			</div>
 		</div>
-		<div class="project-thumb motion" onclick="loadProject('projectone')">
+		<div class="project-thumb motion" onclick="loadProject('ssTutorial')">
+			<img src="images/title-images/ss-tutorials.jpg" alt="Shutterstock Motion Tutorials">
 			<div class="project-thumb-description">
 				<div>Shutterstock Tutorials</div>
 				<i>Recreation of the Title Sequence for the movie Maverick.</i>
 			</div>
 		</div>
-		<div class="project-thumb motion" onclick="loadProject('projectthree')">
+		<div class="project-thumb motion" onclick="loadProject('ssSpectrum')">
+			<img src="images/title-images/ss-spectrum.jpg" alt="Shutterstock Spectrum Product Launch Video">
 			<div class="project-thumb-description">
 				<div>Shutterstock Spectrum</div>
 				<i>This is a couple lines about this cool project that I did that involves this stuff.</i>
 			</div>
 		</div>
-		<div class="project-thumb motion" onclick="loadProject('projectone')">
+		<div class="project-thumb motion" onclick="loadProject('maverick')">
+			<img src="images/title-images/maverick.jpg" alt="Maverick Title Sequence">
 			<div class="project-thumb-description">
 				<div>Maverick</div>
 				<i>Recreation of the Title Sequence for the movie Maverick.</i>
 			</div>
 		</div>
-		<div class="project-thumb motion" onclick="loadProject('projectthree')">
+		<div class="project-thumb motion" onclick="loadProject('angryBirds')">
+			<img src="images/title-images/angry-birds.jpg" alt="Angry Birds - Stop Motion">
 			<div class="project-thumb-description">
 				<div>Angry Birds</div>
 				<i>This is a couple lines about this cool project that I did that involves this stuff.</i>
 			</div>
 		</div>
-		<div class="project-thumb motion" onclick="loadProject('projectthree')">
+		<div class="project-thumb motion" onclick="loadProject('stepBrothers')">
+			<img src="images/title-images/step-brothers.jpg" alt="Step Brothers Kinetic Type">
 			<div class="project-thumb-description">
 				<div>Step Brothers</div>
 				<i>This is a couple lines about this cool project that I did that involves this stuff.</i>
 			</div>
 		</div>
-		<div class="project-thumb branding" onclick="loadProject('projectthree')">
+		<div class="project-thumb branding" onclick="loadProject('jotts')">
+			<img src="images/title-images/jotts.jpg" alt="Jotts Branding">
 			<div class="project-thumb-description">
 				<div>Jotts</div>
 				<i>This is a couple lines about this cool project that I did that involves this stuff.</i>

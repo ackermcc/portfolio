@@ -7,10 +7,10 @@ $(window).load(function(){
 
 	$("#name").css('height', height - 250);
 
-	$(window).resize(function() {
-		var height = $(window).height();
-		$("#name").css('height', height - 250);
-	});
+	// $(window).resize(function() {
+	// 	var height = $(window).height();
+	// 	$("#name").css('height', height - 250);
+	// });
 
 	// WAYPOINTS
 
@@ -45,16 +45,27 @@ $(window).load(function(){
 		}
 	}, {offset: 'bottom-in-view'});
 
+	//LOAD PROJECT THUMBS
+
 	$("div.project-thumb").waypoint(function(){
-		$(this).children('div').animate({opacity: 1, left: "0px"}, "slow");
 		$("#nav-right div").removeClass("active-nav");
 		$("#work-link").addClass("active-nav");
 	}, {offset: 'bottom-in-view'});
+
+	$("div.project-thumb").hover(
+		function(){
+			$(this).children('div').stop().animate({opacity: 1, bottom: "5px"}, "slow");
+		}, 
+		function () {
+			$(this).children('div').stop().animate({opacity: 0, bottom: "-300px"}, "slow");
+		}
+	);
 
 	//SORT NAV
 	$("#tag-nav div").click(function(){
 		$("#tag-nav div").removeClass("active-sort");
 		$(this).addClass("active-sort");
+		$("div.project-thumb").children('div').animate({opacity: 1, left: "0px"}, "slow");
 	});
 
 	$(".all-sort").click(function(){
@@ -63,25 +74,31 @@ $(window).load(function(){
 
 	$(".interactive-sort").click(function(){
 		$("#work div.project-thumb").fadeOut();
-		$("#work div.project-thumb.interactive").fadeIn();
+		setTimeout(function(){
+			$("#work div.project-thumb.interactive").fadeIn();
+		}, 350);
 	});
 
 	$(".motion-sort").click(function(){
 		$("#work div.project-thumb").fadeOut();
-		$("#work div.project-thumb.motion").fadeIn();
+		setTimeout(function(){
+			$("#work div.project-thumb.motion").fadeIn();
+		}, 350);
 	});
 
 	$(".branding-sort").click(function(){
 		$("#work div.project-thumb").fadeOut();
-		$("#work div.project-thumb.branding").fadeIn();
+		setTimeout(function(){
+			$("#work div.project-thumb.branding").fadeIn();
+		}, 350);
 	});
 
 
 	// PROJECT CONTAINER
 
-	$(".project-thumb-description").dotdotdot({
-		watch: "window"
-	});
+	// $(".project-thumb-description").dotdotdot({
+	// 	watch: "window"
+	// });
 
 	$("#project-wrapper").css({
 		height: height,

@@ -1,6 +1,6 @@
 <?php
 
-if ($_GET["project"] == 'projectone') { 
+if ($_GET["project"] == 'sfc') { 
 
 echo "
 
@@ -24,12 +24,11 @@ echo "
 
 }
 
-elseif ($_GET["project"] == 'projecttwo') {
+elseif ($_GET["project"] == 'nitelife') {
 	
 echo "
 
 <div class='pc-left'>
-	<button>close</button>
 </div>
 <div class='pc-right'>
 	<h2>Project Two</h2>
