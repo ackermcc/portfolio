@@ -12,8 +12,8 @@
 		    {
 		    document.getElementById("project-container").innerHTML=xmlhttp.responseText;
 		    $("#close, #project-wrapper").click(function(){
-				$("#project-bg").animate({ opacity: 0 }, "slow").fadeOut();
-				$("#project-wrapper").animate({ opacity: 0, left: 2000 }, "slow").fadeOut();
+				$("#project-bg").animate({ opacity: 0 }, "fast").fadeOut();
+				$("#project-wrapper").animate({ opacity: 0, left: 2000 }, "fast").fadeOut();
 			}).children().click(function(e) {return false;});
 
 		    // VIMEO AND YOUT TUBE RESPONSIVE

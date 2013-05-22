@@ -32,13 +32,13 @@
 <header>
 	<img src="images/chad-ackerman-logo_03.png" alt="small-logo_03.png" />
 	<div id="nav">
-		<div>
+		<div id="about-link-top">
 			About
 		</div>
-		<div>
+		<div id="work-link-top">
 			Work
 		</div>
-		<div>
+		<div id="contact-link-top">
 			Contact
 		</div>
 	</div>

@@ -9,6 +9,7 @@ body {
 
 html {
 	max-width: 1500px;
+	min-width: 1200px;
 	margin: auto;
 }
 
@@ -32,11 +33,12 @@ header {
 		margin-top: 35px;
 	}
 
-	header #nav div {
-		float: left;
-		width: 33%;
-		font-size: 22px;
-	}
+		header #nav div {
+			float: left;
+			width: 33%;
+			font-size: 22px;
+			cursor: pointer;
+		}
 
 	header #fixed-nav {
 		position: fixed;
@@ -49,28 +51,29 @@ header {
 		z-index: 100;
 	}
 
-	header #fixed-nav img {
-		float: left;
-	}
+		header #fixed-nav img {
+			float: left;
+		}
 
-	header #fixed-nav #nav-right {
-		float: right;
-		width: 340px;
-	}
+		header #fixed-nav #nav-right {
+			float: right;
+			width: 340px;
+		}
 
-	header #fixed-nav #nav-right div {
-		float: left;
-		font-size: 22px;
-		width: 33%;
-		color: #fff;
-		padding: 4px 0px;
-		line-height: 1.2;
-	}
+		header #fixed-nav #nav-right div {
+			float: left;
+			font-size: 22px;
+			width: 33%;
+			color: #fff;
+			padding: 4px 0px;
+			line-height: 1.2;
+			cursor: pointer;
+		}
 
-	header #fixed-nav #nav-right div.active-nav {
-		background: rgba(44,55,71, 1);
-		padding: 4px 0px;
-	}
+		header #fixed-nav #nav-right div.active-nav {
+			background: rgba(44,55,71, 1);
+			padding: 4px 0px;
+		}
 
 
 #wrapper {
@@ -86,7 +89,8 @@ header {
 
 	#name {
 		width: 100%;
-		/*height: 100%;*/
+		max-height: 700px;
+		min-height: 500px;
 		background: #2c3747;
 		text-align: center;
 		font-size: 72px;	
@@ -106,7 +110,6 @@ header {
 			position: absolute;
 			top: 33%;
 			left: 22%;
-			/*padding: 200px 0px;*/
 			margin: auto;
 			color: #fff;
 		}
@@ -142,10 +145,10 @@ header {
 			width: 33.3367%;
 			height: auto;
 			float: left;
-			background: red;
 			position: relative;
 			overflow: hidden;
 			cursor: pointer;
+			line-height: 0;
 		}
 
 			#work div.project-thumb img {
@@ -160,7 +163,7 @@ header {
 
 		#work .project-thumb-description {
 			position: absolute;
-			bottom: -300px;
+			bottom: -175px;
 			left: 0px;
 			opacity: 0;
 			width: 100%;
@@ -168,6 +171,7 @@ header {
 			padding: 25px;
 			color: #111;
 			background: rgba(255,255,255, 0.85);
+			line-height: 1.3;
 		}
 
 			#work .project-thumb-description div {

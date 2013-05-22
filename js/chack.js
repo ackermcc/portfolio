@@ -45,6 +45,22 @@ $(window).load(function(){
 		}
 	}, {offset: 'bottom-in-view'});
 
+	//NAVIGATION
+
+	var aboutTop = $('#about').offset().top;
+	var workTop = $('#work').offset().top;
+	var contactTop = $('#contact').offset().top;
+
+	$("#about-link, #about-link-top").click(function(){
+		$("html, body").animate({ scrollTop: aboutTop - 400 }, 300);
+	});
+	$("#work-link, #work-link-top").click(function(){
+		$("html, body").animate({ scrollTop: workTop - 100 }, 300);
+	});
+	$("#contact-link, #contact-link-top").click(function(){
+		$("html, body").animate({ scrollTop: contactTop - 100 }, 300);
+	});
+
 	//LOAD PROJECT THUMBS
 
 	$("div.project-thumb").waypoint(function(){
@@ -54,7 +70,7 @@ $(window).load(function(){
 
 	$("div.project-thumb").hover(
 		function(){
-			$(this).children('div').stop().animate({opacity: 1, bottom: "5px"}, "slow");
+			$(this).children('div').stop().animate({opacity: 1, bottom: "0px"}, "slow");
 		}, 
 		function () {
 			$(this).children('div').stop().animate({opacity: 0, bottom: "-300px"}, "slow");
