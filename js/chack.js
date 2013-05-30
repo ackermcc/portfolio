@@ -22,7 +22,26 @@ $(window).load(function(){
 	  }
 	});
 
-	$('#about').waypoint(function(direction) {
+	$('#about h1').waypoint(function(direction) {
+		if (direction === "down") {
+			$("#about-link").addClass("active-nav");
+		} else {
+			$("#nav-right div").removeClass("active-nav");
+			$("#about-link").addClass("active-nav");
+		}
+	}, { offset: 'bottom-in-view' });
+
+	$('#work h1').waypoint(function(direction) {
+		if (direction === "down") {
+			$("#nav-right div").removeClass("active-nav");
+			$("#work-link").addClass("active-nav");
+		} else {
+			$("#nav-right div").removeClass("active-nav");
+			$("#about-link").addClass("active-nav");
+		}
+	}, {offset: 'bottom-in-view'});
+
+	$('#contact h1').waypoint(function(direction) {
 	 	$('#social-icons a:first-child').animate({ opacity: 1}, 'slow');
 		$('#social-icons a:nth-child(2)').delay(100).animate({ opacity: 1}, 'slow');
 		$('#social-icons a:nth-child(3)').delay(200).animate({ opacity: 1}, 'slow');
@@ -30,20 +49,13 @@ $(window).load(function(){
 		$('#social-icons a:nth-child(5)').delay(400).animate({ opacity: 1}, 'slow');
 
 		if (direction === "down") {
-			$("#about-link").addClass("active-nav");
+			$("#nav-right div").removeClass("active-nav");
+			$("#contact-link").addClass("active-nav");
 		} else {
 			$("#nav-right div").removeClass("active-nav");
+			$("#work-link").addClass("active-nav");
 		}
 	}, { offset: 'bottom-in-view' });
-
-	$('#work').waypoint(function(direction) {
-		if (direction === "down") {
-			
-		} else {
-			$("#nav-right div").removeClass("active-nav");
-			$("#about-link").addClass("active-nav");
-		}
-	}, {offset: 'bottom-in-view'});
 
 	//NAVIGATION
 
@@ -52,7 +64,7 @@ $(window).load(function(){
 	var contactTop = $('#contact').offset().top;
 
 	$("#about-link, #about-link-top").click(function(){
-		$("html, body").animate({ scrollTop: aboutTop - 400 }, 300);
+		$("html, body").animate({ scrollTop: aboutTop - 200 }, 300);
 	});
 	$("#work-link, #work-link-top").click(function(){
 		$("html, body").animate({ scrollTop: workTop - 100 }, 300);
@@ -126,12 +138,14 @@ $(window).load(function(){
 	$("#project-bg").css({
 		height: wholeHeight
 	});
+
 	$("#work div.project-thumb").click(function(){
 		var scrollTop = $(window).scrollTop();
 		$("#project-wrapper").css('top', scrollTop);
 		$("#project-bg").css('display','block').animate({ opacity: 1 }, "slow");
 		$("#project-wrapper").css('display','block').animate({ opacity: 1, left: 0 }, "slow");
 	});
+	
 
 });
 

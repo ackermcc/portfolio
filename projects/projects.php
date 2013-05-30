@@ -4,19 +4,34 @@ if ($_GET["project"] == 'sfc') {
 
 echo "
 
-<div class='pc-left'>
-	<div>
-		<iframe src='http://player.vimeo.com/video/43441134?portrait=0&amp;color=ffffff' width='750' height='422' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+<div class='pc-left-slider'>
+	<div class='flexslider'>
+	  <ul class='slides'>
+	    <li>
+	      <img src='images/sfc/sfc-1_03.png' />
+	    </li>
+	    <li>
+	      <img src='images/sfc/sfc-2_03.png' />
+	    </li>
+	    <li>
+	      <img src='images/sfc/sfc-3_03.png' />
+	    </li>
+	    <li>
+	      <img src='images/sfc/sfc-4_03.png' />
+	    </li>
+	    <li>
+	      <img src='images/sfc/sfc-6_03.png' />
+	    </li>
+	  </ul>
 	</div>
-	<p><a href='http://vimeo.com/43441134'>Maverick Title Sequence</a> from <a href='http://vimeo.com/user6732547'>Chad Ackerman</a> on <a href='http://vimeo.com'>Vimeo</a>.</p>
 </div>
 <div class='pc-right'>
 	<h2>Summerfair Cincinnati</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non ligula orci, et semper nulla. Sed eleifend, dolor eu tempor viverra, elit nunc ornare nisi, ut aliquam ipsum libero quis enim. Nullam ac bibendum massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi metus mi, elementum eget iaculis ut, posuere sed diam.
+	<p>Summerfair Cincinnati is a non-profit organization with a couple of events year round looking to expand its reach and better utilize their small marketing budget. This was a collaborative group project with multiple deliverables in print, motion, and interactive design. My responsibility was designing, creating, and building this survey web application for iPad that would be used at their events to gain user data. I also hooked up the application with a server and developed the PHP to collect the data and export into excel format for the client.
 	</p>
-	<p><strong>Client: </strong><br><span>School</span></p>
-	<p><strong>Date: </strong><br><span>Spring 2012</span></p>
-	<p><strong>Tools: </strong><br><span>Photoshop, After Effects</span></p>
+	<p><strong>Client: </strong><br><span>Summerfair Cincinnati</span></p>
+	<p><strong>Date: </strong><br><span>December 2012</span></p>
+	<p><strong>Tools: </strong><br><span>Photoshop, HTML, JQuery, CSS, XCode</span></p>
 </div>
 
 ";
@@ -27,15 +42,26 @@ elseif ($_GET["project"] == 'nitelife') {
 	
 echo "
 
-<div class='pc-left'>
+<div class='pc-left-slider'>
+	<div class='flexslider'>
+	  <ul class='slides'>
+	    <li>
+	      <img src='images/nitelife/home-phone_03.png' />
+	    </li>
+	    <li>
+	      <img src='images/nitelife/specials-phone_03.png' />
+	    </li>
+	  </ul>
+	</div>
 </div>
 <div class='pc-right'>
 	<h2>NiteLife</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non ligula orci, et semper nulla. Sed eleifend, dolor eu tempor viverra, elit nunc ornare nisi, ut aliquam ipsum libero quis enim. Nullam ac bibendum massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi metus mi, elementum eget iaculis ut, posuere sed diam.
+	<p>NiteLife is a mobile application that caters to both bar owners and users in improving the night life experience. Bars' information and specials loaded based upon the users location offering the ability to go out with confidence and save a little money in the process. NiteLife is also run by the bar owners so their content is their own allowing them to directly market to their users. I have been a Partner of NiteLife for over a year now and am one of the original founding members. I am in charge of all creative work as well as overseeing development of the product.
 	</p>
-	<p><strong>Client: </strong><br><span>Shutterstock, Inc.</span></p>
-	<p><strong>Date: </strong><br><span>May 2013</span></p>
-	<p><strong>Tools: </strong><br><span>Illustrator, After Effects</span></p>
+	<a class='site-link' target='_blank' href='http://cincynitelife.com'>View Full Site</a>
+	<p><strong>Client: </strong><br><span>NiteLife Entertainment, LLC</span></p>
+	<p><strong>Date: </strong><br><span>August 2012 - Present</span></p>
+	<p><strong>Tools: </strong><br><span>Branding, HTML, CSS, JQuery, PHP</span></p>	
 </div>
 
 ";
@@ -46,14 +72,16 @@ elseif ($_GET["project"] == 'baseball') {
 echo "
 
 <div class='pc-left'>
+	<img src='images/baseball-full.jpg' alt='Baseball Visualizer' />
 </div>
 <div class='pc-right'>
 	<h2>Baseball Data Visualizer</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non ligula orci, et semper nulla. Sed eleifend, dolor eu tempor viverra, elit nunc ornare nisi, ut aliquam ipsum libero quis enim. Nullam ac bibendum massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi metus mi, elementum eget iaculis ut, posuere sed diam.
+	<p>This visualizer was built almost entirely in JQuery showing data from baseball statistics in 1987. This visualizer gives the user the ability to compare data from simple to complex levels. The key on the bottom also helps those that may not be as familiar with baseball.
 	</p>
-	<p><strong>Client: </strong><br><span>Shutterstock, Inc.</span></p>
-	<p><strong>Date: </strong><br><span>May 2013</span></p>
-	<p><strong>Tools: </strong><br><span>Illustrator, After Effects</span></p>
+	<a class='site-link' target='_blank' href='http://chackerman.com/baseball/index.html'>View Full Site</a>
+	<p><strong>Client: </strong><br><span>School</span></p>
+	<p><strong>Date: </strong><br><span>December 2012</span></p>
+	<p><strong>Tools: </strong><br><span>Illustrator, HTML, CSS, JQuery</span></p>
 </div>
 
 ";
@@ -63,15 +91,34 @@ elseif ($_GET["project"] == 'sustainability') {
 	
 echo "
 
-<div class='pc-left'>
+<div class='pc-left-slider'>
+	<div class='flexslider'>
+	  <ul class='slides'>
+	    <li>
+	      <img src='images/ucs/ucs-1_03.png' />
+	    </li>
+	    <li>
+	      <img src='images/ucs/ucs-2_03.png' />
+	    </li>
+	    <li>
+	      <img src='images/ucs/ucs-3_03.png' />
+	    </li>
+	    <li>
+	      <img src='images/ucs/ucs-4_03.png' />
+	    </li>
+	    <li>
+	      <img src='images/ucs/ucs-5_03.png' />
+	    </li>
+	  </ul>
+	</div>
 </div>
 <div class='pc-right'>
 	<h2>UC Sustainability</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non ligula orci, et semper nulla. Sed eleifend, dolor eu tempor viverra, elit nunc ornare nisi, ut aliquam ipsum libero quis enim. Nullam ac bibendum massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi metus mi, elementum eget iaculis ut, posuere sed diam.
+	<p>My first Xcode experience was with this iPad infographic. The project was developed and designed by myself and my partner Kate Menkhaus. We added multiple different types of interaction such as maps and web views. We were able to display UC Sustainability's efforts on campus in a fun, interactive way.
 	</p>
-	<p><strong>Client: </strong><br><span>Shutterstock, Inc.</span></p>
-	<p><strong>Date: </strong><br><span>May 2013</span></p>
-	<p><strong>Tools: </strong><br><span>Illustrator, After Effects</span></p>
+	<p><strong>Client: </strong><br><span>School</span></p>
+	<p><strong>Date: </strong><br><span>June 2012</span></p>
+	<p><strong>Tools: </strong><br><span>XCode, Photoshop</span></p>
 </div>
 
 ";
@@ -119,11 +166,11 @@ echo "
 </div>
 <div class='pc-right'>
 	<h2>Shutterstock Tutorials</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non ligula orci, et semper nulla. Sed eleifend, dolor eu tempor viverra, elit nunc ornare nisi, ut aliquam ipsum libero quis enim. Nullam ac bibendum massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi metus mi, elementum eget iaculis ut, posuere sed diam.
+	<p>Shutterstock has an extremely wide range of resources for designers and is continually trying to curate good content marketing in their social media and blog. During my time with Shutterstock I was able to create motion based tutorials utilizing both their footage and still image photography for assets. The purpose of these tutorials are to show the vast amount of capabilities that utilizing Shutterstock's collection has to offer, while also continuing to place them as a thought leaders in the design world.
 	</p>
 	<p><strong>Client: </strong><br><span>Shutterstock, Inc.</span></p>
-	<p><strong>Date: </strong><br><span>May 2013</span></p>
-	<p><strong>Tools: </strong><br><span>Illustrator, After Effects</span></p>
+	<p><strong>Date: </strong><br><span>January 2013 - May 2013</span></p>
+	<p><strong>Tools: </strong><br><span>Photostop, Illustrator, After Effects</span></p>
 </div>
 
 ";
@@ -141,11 +188,11 @@ echo "
 </div>
 <div class='pc-right'>
 	<h2>Shutterstock Spectrum</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non ligula orci, et semper nulla. Sed eleifend, dolor eu tempor viverra, elit nunc ornare nisi, ut aliquam ipsum libero quis enim. Nullam ac bibendum massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi metus mi, elementum eget iaculis ut, posuere sed diam.
+	<p>Shutterstock Spectrum is a visual search tool allowing the user to utilize color in their search for great imagery. This project was a collaboration of other designers and producers where my responsibility was mostly in the final logo resolve animation as well as compiling the pieces together and rendering a final video. The purpose of this video is to promote Spectrum and its exciting new twist on visual search.
 	</p>
 	<p><strong>Client: </strong><br><span>Shutterstock, Inc.</span></p>
-	<p><strong>Date: </strong><br><span>May 2013</span></p>
-	<p><strong>Tools: </strong><br><span>Illustrator, After Effects</span></p>
+	<p><strong>Date: </strong><br><span>April 2013</span></p>
+	<p><strong>Tools: </strong><br><span>Bridge, Photoshop, After Effects</span></p>
 </div>
 
 ";
@@ -163,10 +210,10 @@ echo "
 </div>
 <div class='pc-right'>
 	<h2>Maverick</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non ligula orci, et semper nulla. Sed eleifend, dolor eu tempor viverra, elit nunc ornare nisi, ut aliquam ipsum libero quis enim. Nullam ac bibendum massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi metus mi, elementum eget iaculis ut, posuere sed diam.
+	<p>Maverick is a comedic western film that takes you through the journey a poker player, Bert (Mel Gibson), and his quest to get to the ultimate poker tournament. I made this title sequence to match the playful style of the film while using elements of the movie to bring the viewer into the setting.
 	</p>
 	<p><strong>Client: </strong><br><span>School</span></p>
-	<p><strong>Date: </strong><br><span>Spring 2012</span></p>
+	<p><strong>Date: </strong><br><span>June 2012</span></p>
 	<p><strong>Tools: </strong><br><span>Photoshop, After Effects</span></p>
 </div>
 
@@ -186,11 +233,11 @@ echo "
 </div>
 <div class='pc-right'>
 	<h2>Angry Birds Stop Motion</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non ligula orci, et semper nulla. Sed eleifend, dolor eu tempor viverra, elit nunc ornare nisi, ut aliquam ipsum libero quis enim. Nullam ac bibendum massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi metus mi, elementum eget iaculis ut, posuere sed diam.
+	<p>This was a group project with two other designers: Kate Menkhaus and Patrick Murphey. We chose to do a stop-motion project of Angry Birds. This piece consists of over 1400 images.
 	</p>
-	<p><strong>Client: </strong><br><span>Shutterstock, Inc.</span></p>
-	<p><strong>Date: </strong><br><span>May 2013</span></p>
-	<p><strong>Tools: </strong><br><span>Illustrator, After Effects</span></p>
+	<p><strong>Client: </strong><br><span>School</span></p>
+	<p><strong>Date: </strong><br><span>December 2011</span></p>
+	<p><strong>Tools: </strong><br><span>Digital Photography, After Effects</span></p>
 </div>
 
 ";
@@ -208,10 +255,10 @@ echo "
 </div>
 <div class='pc-right'>
 	<h2>Step Brothers Kinetic Type</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non ligula orci, et semper nulla. Sed eleifend, dolor eu tempor viverra, elit nunc ornare nisi, ut aliquam ipsum libero quis enim. Nullam ac bibendum massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi metus mi, elementum eget iaculis ut, posuere sed diam.
+	<p>Shown above is a kinetic-type piece of a scene from the movie Step Brothers. I chose the typeface Futura and the color scheme to match the free and childish nature of the scene.
 	</p>
-	<p><strong>Client: </strong><br><span>Shutterstock, Inc.</span></p>
-	<p><strong>Date: </strong><br><span>May 2013</span></p>
+	<p><strong>Client: </strong><br><span>School</span></p>
+	<p><strong>Date: </strong><br><span>June 2010</span></p>
 	<p><strong>Tools: </strong><br><span>Illustrator, After Effects</span></p>
 </div>
 
@@ -223,14 +270,24 @@ elseif ($_GET["project"] == 'jotts') {
 echo "
 
 <div class='pc-left'>
+<div class='flexslider'>
+	  <ul class='slides'>
+	    <li>
+	      <img src='images/jotts/jotts_black.png' alt='Jotts Logo' />
+	    </li>
+	    <li>
+	      <img src='images/jotts/Jotts_package.png' alt='Jotts Packaging' />
+	    </li>
+	  </ul>
+	</div>
 </div>
 <div class='pc-right'>
 	<h2>Jotts</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non ligula orci, et semper nulla. Sed eleifend, dolor eu tempor viverra, elit nunc ornare nisi, ut aliquam ipsum libero quis enim. Nullam ac bibendum massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi metus mi, elementum eget iaculis ut, posuere sed diam.
+	<p>Jotts is a start up company based out of Columbus, OH that sells retail jello shots. They were looking for a logo design and a brand identity. Myself and another designer whom I do freelance work with designed this logo and an example of possible packing design for their company. We wanted the colors to be vibrant and stand off the shelf while also having a memorable logo that catered to their target demographic.
 	</p>
-	<p><strong>Client: </strong><br><span>Shutterstock, Inc.</span></p>
-	<p><strong>Date: </strong><br><span>May 2013</span></p>
-	<p><strong>Tools: </strong><br><span>Illustrator, After Effects</span></p>
+	<p><strong>Client: </strong><br><span>Jotts</span></p>
+	<p><strong>Date: </strong><br><span>November 2012</span></p>
+	<p><strong>Tools: </strong><br><span>Illustrator, Cinema 4D</span></p>
 </div>
 
 ";

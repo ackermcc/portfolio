@@ -15,6 +15,7 @@
 
   <!-- style -->
   <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/flexslider.css">
   <link rel="stylesheet" href="symbolset/webfonts/ss-social-circle.css">
 
   <!-- js -->
@@ -24,6 +25,7 @@
   <script type="text/javascript" src="js/chack.js"></script>
   <script type="text/javascript" src="js/dynamic-loading.js"></script>
   <script type="text/javascript" src="js/jquery.dotdotdot-1.5.7-packed.js"></script>
+  <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
   <script type="text/javascript" src="symbolset/webfonts/ss-social.js"></script>
 
 </head>
@@ -69,17 +71,8 @@
 	</div>
 	<article id="about">
 		<h1>About</h1>
-		<p>My name is Chad Ackerman and I am a fourth year design major at the University of Cincinnati in the Digital Design program. I have completed two professional co-op rotations with UniRush LLC/RushCard and one rotation with Gaslight Software LLC and am currently seeking a Spring co-op position.</p>
-
-		<p>I am also involved on campus in the Sigma Chi Fraternity, the Greek Recruitment Team, and the DAAP Ambassador program. In addition to my collegiate activities I am also very interested in entrepreneurship and am involved in a couple start up companies. One of which is a freelance design business with one of my fellow studiomates. Feel free to look through my portfolio and enjoy!</p>
-		<div id="social-icons" class="ss-icon">
-		  <a href="#">twitter</a>
-		  <a href="#">linkedin</a>
-		  <a href="#">dribbble</a>
-		  <a href="#">vimeo</a>
-		  <a href="#">email</a>
-		  <!-- <a href="#">link</a> -->
-		</div>
+		<p>My name is Chad Ackerman and I am a fifth year design major at the University of Cincinnati in the Digital Design program. I have completed four professional co-op rotations with UniRush LLC/RushCard, Gaslight Software LLC and Shutterstock Inc.</p>
+		<p>Beyond my professional and educational experiences I am also a parter in my own business NiteLife which is what I spend most of my "free time" on. I love design, development, business, and anything that can truly make a user's experience better. Feel free to check out my site and get to know a little bit more about me!</p>
 	</article>
 	<article id="work">
 		<h1>Work</h1>
@@ -93,42 +86,42 @@
 			<img src="images/title-images/sfc-title.jpg" alt="Summerfair Cincinnati Survey">
 			<div class="project-thumb-description">
 				<div>Summerfair Cincinnati Survey App</div>
-				<i>This is a couple lines about this cool project that I did that involves this stuff.</i>
+				<i>Survey application built for in-event surveying of customers for user data.</i>
 			</div>
 		</div>
 		<div class="project-thumb interactive branding" onclick="loadProject('nitelife')">
 			<img src="images/title-images/nitelife-title.jpg" alt="NiteLife - Cincinnati Start Up">
 			<div class="project-thumb-description">
 				<div>NiteLife</div>
-				<i>This is a couple lines about this cool project that I did that involves this stuff.</i>
+				<i>Logo, branding, marketing, product design, etc. for my start up company NiteLife.</i>
 			</div>
 		</div>
 		<div class="project-thumb interactive" onclick="loadProject('baseball')">
 			<img src="images/title-images/baseball-title.jpg" alt="Baseball Data Visualizer">
 			<div class="project-thumb-description">
 				<div>Baseball Visualizer</div>
-				<i>Recreation of the Title Sequence for the movie Maverick.</i>
+				<i>Baseball data visualizer for offensive players' statistics.</i>
 			</div>
 		</div>
 		<div class="project-thumb interactive" onclick="loadProject('sustainability')">
 			<img src="images/title-images/ucs.jpg" alt="University of Cincinnati Sustainability - iPad App">
 			<div class="project-thumb-description">
 				<div>UC Sustainability</div>
-				<i>This is a couple lines about this cool project that I did that involves this stuff.</i>
+				<i>iPad application for increasing awareness on sustainability at the University of Cincinnati.</i>
 			</div>
 		</div>
 		<div class="project-thumb motion" onclick="loadProject('ssTutorial')">
 			<img src="images/title-images/ss-tutorials.jpg" alt="Shutterstock Motion Tutorials">
 			<div class="project-thumb-description">
 				<div>Shutterstock Tutorials</div>
-				<i>Recreation of the Title Sequence for the movie Maverick.</i>
+				<i>Tutorials created with Shutterstock content for its blog and content marketing.</i>
 			</div>
 		</div>
 		<div class="project-thumb motion" onclick="loadProject('ssSpectrum')">
 			<img src="images/title-images/ss-spectrum.jpg" alt="Shutterstock Spectrum Product Launch Video">
 			<div class="project-thumb-description">
 				<div>Shutterstock Spectrum</div>
-				<i>This is a couple lines about this cool project that I did that involves this stuff.</i>
+				<i>Product release and demonstration video for Shutterstock's new visual search tool: Spectrum.</i>
 			</div>
 		</div>
 		<div class="project-thumb motion" onclick="loadProject('maverick')">
@@ -142,26 +135,62 @@
 			<img src="images/title-images/angry-birds.jpg" alt="Angry Birds - Stop Motion">
 			<div class="project-thumb-description">
 				<div>Angry Birds</div>
-				<i>This is a couple lines about this cool project that I did that involves this stuff.</i>
+				<i>Recreation of the digital game Angry Birds in stop motion animation.</i>
 			</div>
 		</div>
 		<div class="project-thumb motion" onclick="loadProject('stepBrothers')">
 			<img src="images/title-images/step-brothers.jpg" alt="Step Brothers Kinetic Type">
 			<div class="project-thumb-description">
 				<div>Step Brothers</div>
-				<i>This is a couple lines about this cool project that I did that involves this stuff.</i>
+				<i>Kinetic type motion piece on a short scene from the movie Step Brothers.</i>
 			</div>
 		</div>
 		<div class="project-thumb branding" onclick="loadProject('jotts')">
 			<img src="images/title-images/jotts.jpg" alt="Jotts Branding">
 			<div class="project-thumb-description">
 				<div>Jotts</div>
-				<i>This is a couple lines about this cool project that I did that involves this stuff.</i>
+				<i>Logo and brand identity for a small product start up company out of Columbus.</i>
 			</div>
 		</div>
 	</article>
 	<article id="contact">
-
+		<h1>Contact</h1>
+		<div id="social-icons" class="ss-icon">
+		  <a target="_blank" href="https://twitter.com/chackerman">twitter</a>
+		  <a target="_blank" href="http://www.linkedin.com/pub/chad-ackerman/36/352/885">linkedin</a>
+		  <a target="_blank" href="http://dribbble.com/Chackerman">dribbble</a>
+		  <a target="_blank" href="https://vimeo.com/chackerman">vimeo</a>
+		  <!-- <a href="#">email</a> -->
+		  <!-- <a href="#">link</a> -->
+		</div>
+		<?php
+		if (isset($_REQUEST['email']))
+		//if "email" is filled out, send email
+		  {
+		  //send email
+		  $email = $_REQUEST['email'] ;
+		  $subject = $_REQUEST['subject'] ;
+		  $message = $_REQUEST['message'] ;
+		  mail("ackermcc@gmail.com", $subject,
+		  $message, "From:" . $email);
+		  echo "Thanks for reaching out!";
+		  }
+		else
+		//if "email" is not filled out, display the form
+		  {
+		  echo "
+		  <div id='email-form' style='width: 400px; margin: auto;'>
+			  <form method='post' action='mailform.php'>
+			  <input name='email' type='text' placeholder='email address'><br>
+			  <input name='subject' type='text' placeholder='subject'><br>
+			  <br>
+			  <textarea name='message' rows='12'></textarea><br>
+			  <input id='submit' type='submit'>
+			  </form>
+		  </div>
+		  ";
+		  }
+		?>
 	</article>
 	<div id="project-bg"></div>
 	<div id="project-wrapper">

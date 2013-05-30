@@ -16,6 +16,14 @@
 				$("#project-wrapper").animate({ opacity: 0, left: 2000 }, "fast").fadeOut();
 			}).children().click(function(e) {return false;});
 
+			//FLEXSLIDER
+			$('.flexslider').flexslider({
+			    animation: "slide",
+			    smoothHeight: "true",
+			    slideshowSpeed: "5000",
+			    controlNav: "false"
+			});
+
 		    // VIMEO AND YOUT TUBE RESPONSIVE
 
 			(function() {

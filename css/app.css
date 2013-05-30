@@ -13,7 +13,7 @@ html {
 	margin: auto;
 }
 
-div, span, p, article, header, footer {
+div, span, p, article, header, footer, input, textarea {
 	box-sizing: border-box;
 }
 
@@ -123,22 +123,9 @@ header {
 			font-size: 22px;
 		}
 
-		#about #social-icons {
-			width: 100%;
-			text-align: center;
-			margin-top: 60px;
-			font-size: 50px;
-			position: relative;
-			z-index: 10;
-		}
-
-			#about #social-icons a {
-				color: #2c3747;
-				opacity: 0;
-			}
-
 	#work {
 		margin: 50px auto;
+		overflow: auto;
 	}
 
 		#work div.project-thumb {
@@ -181,10 +168,11 @@ header {
 			}
 
 #tag-nav {
-	width: 316px;
+	width: 344px;
 	text-align: center;
 	margin: 0px auto 40px auto;
 	overflow: auto;
+	font-size: 18px;
 }
 
 	.active-sort {
@@ -212,7 +200,7 @@ header {
 }
 
 	#project-bg {
-		position: absolute;
+		position: fixed;
 		top: 0;
 		left: 0;
 		width: 100%;
@@ -232,6 +220,25 @@ header {
 		width: 60%;
 		float: left;
 	}
+
+	.pc-left-slider {
+		width: 37%;
+		float: left;
+		margin-left: 13%;
+	}
+
+		.flexslider {
+			background: none !important;
+			border: none !important;
+			box-shadow: none !important;
+		}
+
+		.site-link {
+			color: #fff;
+			background: rgba(44,55,71, 1);
+			padding: 3px 8px;
+			border-radius: 25px;
+		}
 
 	.pc-right {
 		width: 35%;
@@ -254,4 +261,69 @@ header {
 	cursor: pointer;
 }
 
+
+//CONTACT FORM
+
+#email-form {
+	
+}
+
+	#email-form input {
+		border-radius: 5px;
+		border: 1px solid #ccc;
+		padding: 8px 10px;
+		width: 100%;
+		font-size: 20px;
+	}
+
+	#email-form textarea {
+		border-radius: 5px;
+		border: 1px solid #ccc;
+		padding: 5px 10px;
+		width: 100%;
+		font-size: 16px;
+	}
+
+	#email-form #submit {
+		float: right;
+		width: 35%;
+		color: #fff;
+		background: rgba(44,55,71, 1);
+	}
+
+	::-webkit-input-placeholder {
+	   color: #999;
+	   font-size: 20px;
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+	   color: #999;
+	   font-size: 20px;
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+	   color: #999;
+	   font-size: 20px;
+	}
+
+	:-ms-input-placeholder {  
+	   color: red;  
+	}
+
+	#social-icons {
+			width: 100%;
+			text-align: center;
+			font-size: 50px;
+			position: relative;
+			z-index: 10;
+		}
+
+			#social-icons a {
+				color: #2c3747;
+				opacity: 0;
+			}
+
+			#social-icons a:hover {
+				color: #d36a4d;
+			}
 
