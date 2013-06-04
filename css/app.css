@@ -40,6 +40,10 @@ header {
 			cursor: pointer;
 		}
 
+		header #nav div:hover {
+			
+		}
+
 	header #fixed-nav {
 		position: fixed;
 		opacity: 0;
@@ -115,13 +119,41 @@ header {
 		}
 
 	#about {
-		width: 60%;
+		width: 70%;
 		margin: 50px auto;
+		overflow: hidden;
 	}
+
+		#about #left {
+			float: left;
+			width: 30%;
+			text-align: center;
+		}
+
+		#about div:last-child {
+			float: right;
+			width: 70%;
+		}
+
+		#about img {
+			margin: 28px 0px 18px 0px;
+		}
 
 		#about p {
 			font-size: 22px;
 		}
+
+		#resume {
+			color: #fff;
+			background: rgba(44,55,71, 1);
+			padding: 4px 10px;
+			border-radius: 25px;
+			font-size: 22px;
+		}
+
+		#resume:hover {
+				background: #d36a4d;
+			}
 
 	#work {
 		margin: 50px auto;
@@ -129,7 +161,7 @@ header {
 	}
 
 		#work div.project-thumb {
-			width: 33.3367%;
+			width: 33.3337%;
 			height: auto;
 			float: left;
 			position: relative;
@@ -236,7 +268,7 @@ header {
 		.site-link {
 			color: #fff;
 			background: rgba(44,55,71, 1);
-			padding: 3px 8px;
+			padding: 5px 10px;
 			border-radius: 25px;
 		}
 
@@ -289,6 +321,7 @@ header {
 		width: 35%;
 		color: #fff;
 		background: rgba(44,55,71, 1);
+		cursor: pointer;
 	}
 
 	::-webkit-input-placeholder {

@@ -11,16 +11,22 @@
 		  if (xmlhttp.readyState==4 && xmlhttp.status==200)
 		    {
 		    document.getElementById("project-container").innerHTML=xmlhttp.responseText;
-		    $("#close, #project-wrapper").click(function(){
+
+		    $("#close, html").on("click", function(){
 				$("#project-bg").animate({ opacity: 0 }, "fast").fadeOut();
 				$("#project-wrapper").animate({ opacity: 0, left: 2000 }, "fast").fadeOut();
-			}).children().click(function(e) {return false;});
+				$("html").unbind();
+			});
+
+			$('#project-container').click(function(event){
+			    event.stopPropagation();
+			});
 
 			//FLEXSLIDER
 			$('.flexslider').flexslider({
 			    animation: "slide",
 			    smoothHeight: "true",
-			    slideshowSpeed: "5000",
+			    slideshowSpeed: "6000",
 			    controlNav: "false"
 			});
 
@@ -58,4 +64,8 @@
 
 		xmlhttp.open("GET","projects/projects.php?project=" +project,true);
 		xmlhttp.send();
+
+		// var hash = project;
+		// document.location.hash = hash;
 	}
+

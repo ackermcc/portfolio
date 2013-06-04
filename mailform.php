@@ -4,7 +4,8 @@
 	$message = $_REQUEST['message'] ;
 	mail("ackermcc@gmail.com", $subject,
 	$message, "From:" . $email);
-	print '<script type="text/javascript">'; 
-	print 'alert("Thanks for reaching out!")'; 
-	print '</script>';
+	// print '<script type="text/javascript">'; 
+	// print 'alert("Thanks for reaching out!")'; 
+	// print '</script>';
+	header("Location: index.php");
 ?>

@@ -28,6 +28,20 @@
   <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
   <script type="text/javascript" src="symbolset/webfonts/ss-social.js"></script>
 
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31092072-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
 </head>
 <body>
 
@@ -71,8 +85,14 @@
 	</div>
 	<article id="about">
 		<h1>About</h1>
-		<p>My name is Chad Ackerman and I am a fifth year design major at the University of Cincinnati in the Digital Design program. I have completed four professional co-op rotations with UniRush LLC/RushCard, Gaslight Software LLC and Shutterstock Inc.</p>
-		<p>Beyond my professional and educational experiences I am also a parter in my own business NiteLife which is what I spend most of my "free time" on. I love design, development, business, and anything that can truly make a user's experience better. Feel free to check out my site and get to know a little bit more about me!</p>
+		<div id="left">
+			<img src="images/prof-image.png" alt="Chad Ackerman" />
+			<br><a target="_blank" id="resume" href="resume.pdf">Résumé</a>
+		</div>
+		<div>
+			<p>My name is Chad Ackerman and I am a fifth year design major at the University of Cincinnati in the Digital Design program. I have completed four professional co-op rotations with UniRush LLC/RushCard, Gaslight Software LLC and Shutterstock Inc.</p>
+			<p>Beyond my professional and educational experiences I am also a parter in my own business NiteLife which is what I spend most of my "free time" on. I love design, development, business, and anything that can truly make a user's experience better. Feel free to check out my site and get to know a little bit more about me!</p>
+		</div>
 	</article>
 	<article id="work">
 		<h1>Work</h1>
@@ -163,34 +183,17 @@
 		  <!-- <a href="#">email</a> -->
 		  <!-- <a href="#">link</a> -->
 		</div>
-		<?php
-		if (isset($_REQUEST['email']))
-		//if "email" is filled out, send email
-		  {
-		  //send email
-		  $email = $_REQUEST['email'] ;
-		  $subject = $_REQUEST['subject'] ;
-		  $message = $_REQUEST['message'] ;
-		  mail("ackermcc@gmail.com", $subject,
-		  $message, "From:" . $email);
-		  echo "Thanks for reaching out!";
-		  }
-		else
-		//if "email" is not filled out, display the form
-		  {
-		  echo "
-		  <div id='email-form' style='width: 400px; margin: auto;'>
-			  <form method='post' action='mailform.php'>
-			  <input name='email' type='text' placeholder='email address'><br>
-			  <input name='subject' type='text' placeholder='subject'><br>
-			  <br>
-			  <textarea name='message' rows='12'></textarea><br>
-			  <input id='submit' type='submit'>
-			  </form>
-		  </div>
-		  ";
-		  }
-		?>
+
+	  <div id='email-form' style='width: 400px; margin: auto;'>
+		  <form method='post' action='mailform.php'>
+		  <input name='email' type='text' placeholder='email address'><br>
+		  <input name='subject' type='text' placeholder='subject'><br>
+		  <br>
+		  <textarea name='message' rows='12'></textarea><br>
+		  <input id='submit' type='submit'>
+		  </form>
+	  </div>
+
 	</article>
 	<div id="project-bg"></div>
 	<div id="project-wrapper">

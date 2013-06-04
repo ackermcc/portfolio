@@ -139,7 +139,7 @@ $(window).load(function(){
 		height: wholeHeight
 	});
 
-	$("#work div.project-thumb").click(function(){
+	$("#work div.project-thumb").on("click", function(){
 		var scrollTop = $(window).scrollTop();
 		$("#project-wrapper").css('top', scrollTop);
 		$("#project-bg").css('display','block').animate({ opacity: 1 }, "slow");
