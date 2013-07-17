@@ -67,5 +67,8 @@
 
 		// var hash = project;
 		// document.location.hash = hash;
+
+		//Analytics
+		_gaq.push(['_trackEvent', 'Project', 'click', project]);
 	}
 

@@ -9,7 +9,7 @@
   <meta charset="utf-8" />
   <link rel="SHORTCUT ICON" href="favicon.jpg">
   <!-- Set the viewport width to device width for mobile -->
-  <meta name="viewport" content="width=device-width" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Chad Ackerman | Digital Designer</title>
 
@@ -77,7 +77,7 @@
 <div id="wrapper">
 	<article id="name">
 		<p>
-			Hello. My name is Chad. I am a Designer.
+			Hello. My name is<br>Chad. I am a Designer.
 		</p>
 	</article>
 	<div id="triangle-down">
@@ -190,7 +190,7 @@
 		  <input name='subject' type='text' placeholder='subject'><br>
 		  <br>
 		  <textarea name='message' rows='12'></textarea><br>
-		  <input id='submit' type='submit'>
+		  <input id='submit' type='submit' name='Submit' value='Submit'>
 		  </form>
 	  </div>
 
