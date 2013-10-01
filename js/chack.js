@@ -129,8 +129,8 @@ $(window).load(function(){
 	// });
 
 	$("#project-wrapper").css({
-		height: height,
-		left: width
+		height: height
+		// left: width
 	});
 	
 	var wholeHeight = $("html").height();
@@ -142,8 +142,8 @@ $(window).load(function(){
 	$("#work div.project-thumb").on("click", function(){
 		var scrollTop = $(window).scrollTop();
 		$("#project-wrapper").css('top', scrollTop);
-		$("#project-bg").css('display','block').animate({ opacity: 1 }, "slow");
-		$("#project-wrapper").css('display','block').animate({ opacity: 1, left: 0 }, "slow");
+		$("#project-bg").css('display','block').animate({ opacity: 1 }, "fast");
+		$("#project-wrapper").css('display','block').animate({ opacity: 1 }, "fast");
 	});
 	
 

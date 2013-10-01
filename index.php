@@ -109,6 +109,13 @@
 				<i>Survey application built for in-event surveying of customers for user data.</i>
 			</div>
 		</div>
+		<div class="project-thumb interactive motion branding" onclick="loadProject('nom')">
+			<img src="images/title-images/nom-title.png" alt="nom">
+			<div class="project-thumb-description">
+				<div>nom</div>
+				<i>Survey application built for in-event surveying of customers for user data.</i>
+			</div>
+		</div>
 		<div class="project-thumb interactive branding" onclick="loadProject('nitelife')">
 			<img src="images/title-images/nitelife-title.jpg" alt="NiteLife - Cincinnati Start Up">
 			<div class="project-thumb-description">

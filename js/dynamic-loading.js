@@ -14,7 +14,7 @@
 
 		    $("#close, html").on("click", function(){
 				$("#project-bg").animate({ opacity: 0 }, "fast").fadeOut();
-				$("#project-wrapper").animate({ opacity: 0, left: 2000 }, "fast").fadeOut();
+				$("#project-wrapper").animate({ opacity: 0 }, "fast").fadeOut();
 				$("html").unbind();
 			});
 

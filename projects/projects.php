@@ -31,11 +31,34 @@ echo "
 	</p>
 	<p><strong>Client: </strong><br><span>Summerfair Cincinnati</span></p>
 	<p><strong>Date: </strong><br><span>December 2012</span></p>
-	<p><strong>Tools: </strong><br><span>Photoshop, HTML, JQuery, CSS, XCode</span></p>
+	<p><strong>Tools/Skills: </strong><br><span>Photoshop, HTML, JQuery, CSS, XCode</span></p>
 </div>
 
 ";
 
+}
+
+elseif ($_GET["project"] == 'nom') {
+	
+echo "
+
+<div class='pc-left'>
+	<div>
+		<iframe src='http://player.vimeo.com/video/75826186?byline=0' width='750' height='422' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+	</div>
+	<p><a href='http://vimeo.com/75826186'>nom App Demo</a> from <a href='http://vimeo.com/chackerman'>Chad Ackerman</a> on <a href='https://vimeo.com'>Vimeo</a>.</p>
+</div>
+<div class='pc-right'>
+	<h2>nom</h2>
+	<p>nom was a group project where we were told to identify a problem that existed today and solve it. The problem: Through lack of time, resources, and knowledge college students’ diets and wallets suffer. With the right supplies and education, they can soon be saving money and eating better with a wide variety of options tailored to their specific needs.
+	</p>
+	<a class='site-link' target='_blank' href='images/nom/_nom-final-pres.pdf'>Final Presentation</a>
+	<p><strong>Client: </strong><br><span>School</span></p>
+	<p><strong>Date: </strong><br><span>Summer 2013</span></p>
+	<p><strong>Tools/Skills: </strong><br><span>Branding, UI, UX, Motion</span></p>	
+</div>
+
+";
 }
 
 elseif ($_GET["project"] == 'nitelife') {
@@ -61,7 +84,7 @@ echo "
 	<a class='site-link' target='_blank' href='http://cincynitelife.com'>View Full Site</a>
 	<p><strong>Client: </strong><br><span>NiteLife Entertainment, LLC</span></p>
 	<p><strong>Date: </strong><br><span>August 2012 - Present</span></p>
-	<p><strong>Tools: </strong><br><span>Branding, HTML, CSS, JQuery, PHP</span></p>	
+	<p><strong>Tools/Skills: </strong><br><span>Branding, UI, UX, HTML, CSS, JQuery, PHP</span></p>	
 </div>
 
 ";
@@ -81,7 +104,7 @@ echo "
 	<a class='site-link' target='_blank' href='http://chackerman.com/baseball/index.html'>View Full Site</a>
 	<p><strong>Client: </strong><br><span>School</span></p>
 	<p><strong>Date: </strong><br><span>December 2012</span></p>
-	<p><strong>Tools: </strong><br><span>Illustrator, HTML, CSS, JQuery</span></p>
+	<p><strong>Tools/Skills: </strong><br><span>Illustrator, UI, HTML, CSS, JQuery</span></p>
 </div>
 
 ";
@@ -118,7 +141,7 @@ echo "
 	</p>
 	<p><strong>Client: </strong><br><span>School</span></p>
 	<p><strong>Date: </strong><br><span>June 2012</span></p>
-	<p><strong>Tools: </strong><br><span>XCode, Photoshop</span></p>
+	<p><strong>Tools/Skills: </strong><br><span>XCode, UI, Photoshop</span></p>
 </div>
 
 ";
@@ -170,7 +193,7 @@ echo "
 	</p>
 	<p><strong>Client: </strong><br><span>Shutterstock, Inc.</span></p>
 	<p><strong>Date: </strong><br><span>January 2013 - May 2013</span></p>
-	<p><strong>Tools: </strong><br><span>Photostop, Illustrator, After Effects</span></p>
+	<p><strong>Tools/Skills: </strong><br><span>Motion Design,Photostop, Illustrator, After Effects</span></p>
 </div>
 
 ";
@@ -192,7 +215,7 @@ echo "
 	</p>
 	<p><strong>Client: </strong><br><span>Shutterstock, Inc.</span></p>
 	<p><strong>Date: </strong><br><span>April 2013</span></p>
-	<p><strong>Tools: </strong><br><span>Bridge, Photoshop, After Effects</span></p>
+	<p><strong>Tools/Skills: </strong><br><span>Motion Design, Bridge, Photoshop, After Effects</span></p>
 </div>
 
 ";
@@ -214,7 +237,7 @@ echo "
 	</p>
 	<p><strong>Client: </strong><br><span>School</span></p>
 	<p><strong>Date: </strong><br><span>June 2012</span></p>
-	<p><strong>Tools: </strong><br><span>Photoshop, After Effects</span></p>
+	<p><strong>Tools/Skills: </strong><br><span>Motion Design, Photoshop, After Effects</span></p>
 </div>
 
 ";
@@ -237,7 +260,7 @@ echo "
 	</p>
 	<p><strong>Client: </strong><br><span>School</span></p>
 	<p><strong>Date: </strong><br><span>December 2011</span></p>
-	<p><strong>Tools: </strong><br><span>Digital Photography, After Effects</span></p>
+	<p><strong>Tools/Skills: </strong><br><span>Motion Design, Digital Photography, After Effects</span></p>
 </div>
 
 ";
@@ -248,9 +271,9 @@ elseif ($_GET["project"] == 'stepBrothers') {
 echo "
 
 <div class='pc-left'>
-<div>
-	<iframe src='http://player.vimeo.com/video/24690517?byline=0' width='750' height='422' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> 
-</div>
+	<div>
+		<iframe src='http://player.vimeo.com/video/24690517?byline=0' width='750' height='422' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> 
+	</div>
 	<p><a href='http://vimeo.com/24690517'>Step Brothers - Kinetic Type</a> from <a href='http://vimeo.com/chackerman'>Chad Ackerman</a> on <a href='http://vimeo.com'>Vimeo</a>.</p>
 </div>
 <div class='pc-right'>
@@ -259,7 +282,7 @@ echo "
 	</p>
 	<p><strong>Client: </strong><br><span>School</span></p>
 	<p><strong>Date: </strong><br><span>June 2010</span></p>
-	<p><strong>Tools: </strong><br><span>Illustrator, After Effects</span></p>
+	<p><strong>Tools/Skills: </strong><br><span>Motion Deign, Illustrator, After Effects</span></p>
 </div>
 
 ";
@@ -287,7 +310,7 @@ echo "
 	</p>
 	<p><strong>Client: </strong><br><span>Jotts</span></p>
 	<p><strong>Date: </strong><br><span>November 2012</span></p>
-	<p><strong>Tools: </strong><br><span>Illustrator, Cinema 4D</span></p>
+	<p><strong>Tools/Skills: </strong><br><span>Branding, Illustrator, Cinema 4D</span></p>
 </div>
 
 ";
