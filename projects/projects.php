@@ -69,22 +69,32 @@ echo "
 	<div class='flexslider'>
 	  <ul class='slides'>
 	    <li>
-	      <img src='images/nitelife/home-phone_03.png' />
+	      <img src='images/nitelife/1.png' />
 	    </li>
 	    <li>
-	      <img src='images/nitelife/specials-phone_03.png' />
+	      <img src='images/nitelife/2.png' />
+	    </li>
+	    <li>
+	      <img src='images/nitelife/3.png' />
+	    </li>
+	    <li>
+	      <img src='images/nitelife/4.png' />
+	    </li>
+	    <li>
+	      <img src='images/nitelife/5.png' />
 	    </li>
 	  </ul>
 	</div>
 </div>
 <div class='pc-right'>
 	<h2>NiteLife</h2>
-	<p>NiteLife is a mobile application that caters to both bar owners and users in improving the night life experience. Bars' information and specials loaded based upon the users location offering the ability to go out with confidence and save a little money in the process. NiteLife is also run by the bar owners so their content is their own allowing them to directly market to their users. I have been a Partner of NiteLife for over a year now and am one of the original founding members. I am in charge of all creative work as well as overseeing development of the product.
+	<p>NiteLife is a mobile application that caters to both bar owners and users in improving the night life experience. Bars' information and specials loaded based upon the users location offering the ability to go out with confidence and save a little money in the process. I have been a Partner of NiteLife for over a year now and am one of the original founding members. I am in charge of all creative work as well as overseeing development of the product.
 	</p>
 	<a class='site-link' target='_blank' href='http://cincynitelife.com'>View Full Site</a>
+	<a class='site-link' target='_blank' href='http://bit.ly/18QtdmP'>App Store</a>
 	<p><strong>Client: </strong><br><span>NiteLife Entertainment, LLC</span></p>
 	<p><strong>Date: </strong><br><span>August 2012 - Present</span></p>
-	<p><strong>Tools/Skills: </strong><br><span>Branding, UI, UX, HTML, CSS, JQuery, PHP</span></p>	
+	<p><strong>Tools/Skills: </strong><br><span>Branding, UI, UX, HTML, CSS, JQuery, PHP, XCode</span></p>	
 </div>
 
 ";

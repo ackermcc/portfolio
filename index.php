@@ -90,8 +90,8 @@
 			<br><a target="_blank" id="resume" href="resume.pdf">Résumé</a>
 		</div>
 		<div>
-			<p>My name is Chad Ackerman and I am a fifth year design major at the University of Cincinnati in the Digital Design program. I have completed four professional co-op rotations with UniRush LLC/RushCard, Gaslight Software LLC and Shutterstock Inc.</p>
-			<p>Beyond my professional and educational experiences I am also a parter in my own business NiteLife which is what I spend most of my "free time" on. I love design, development, business, and anything that can truly make a user's experience better. Feel free to check out my site and get to know a little bit more about me!</p>
+			<p>My name is Chad Ackerman and I am a fifth year design major at the University of Cincinnati in the Digital Design program. I have completed five professional co-op rotations with UniRush LLC/RushCard, Gaslight Software LLC, Shutterstock Inc., and Design & Acquisition.</p>
+			<p>Beyond my professional and educational experiences I am also a founder of a local Cincinnati start up, NiteLife which is what I spend most of my "free time" on. I love design, development, business, and anything that can truly make a user's experience better. Feel free to check out my site and get to know a little bit more about me!</p>
 		</div>
 	</article>
 	<article id="work">
@@ -117,7 +117,7 @@
 			</div>
 		</div>
 		<div class="project-thumb interactive branding" onclick="loadProject('nitelife')">
-			<img src="images/title-images/nitelife-title.jpg" alt="NiteLife - Cincinnati Start Up">
+			<img src="images/title-images/nitelife-title.png" alt="NiteLife - Cincinnati Start Up">
 			<div class="project-thumb-description">
 				<div>NiteLife</div>
 				<i>Logo, branding, marketing, product design, etc. for my start up company NiteLife.</i>

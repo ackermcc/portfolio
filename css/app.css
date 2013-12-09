@@ -84,7 +84,7 @@ header {
 
 #wrapper {
 	margin: 15px auto;
-	padding: 30px;
+	padding: 35px;
 	overflow: auto;
 }
 
@@ -218,7 +218,7 @@ header {
 	}
 
 	#tag-nav div {
-		padding: 3px 15px;
+		padding: 3px 14px;
 		float: left;
 		cursor: pointer;
 	}
