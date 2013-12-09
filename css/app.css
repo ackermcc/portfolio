@@ -154,7 +154,7 @@ header {
 
 		#resume:hover {
 				background: #d36a4d;
-			}
+		}
 
 	#work {
 		margin: 50px auto;
@@ -379,7 +379,7 @@ header {
 		margin: 30px 40px;
 	}
 
-	#fixed-nav, #tag-nav, #triangle-down, #about h1 {
+	#fixed-nav, #tag-nav, #triangle-down, #about h1, #work h1 {
 		display: none;
 	}
 
@@ -416,9 +416,67 @@ header {
 	}
 
 	#about {
-		margin: 0px;
+		width: 90%;
+		margin: 50px auto;
+		overflow: hidden;
 	}
 
+		#about #left {
+			float: left;
+			width: 30%;
+			text-align: center;
+		}
+
+		#about div:last-child {
+			float: left;
+			width: 70%;
+		}
+
+		#about img {
+			margin: 28px 0px 18px 0px;
+		}
+
+		#about p {
+			font-size: 22px;
+		}
+
+		#resume {
+			color: #fff;
+			background: rgba(44,55,71, 1);
+			padding: 4px 10px;
+			border-radius: 25px;
+			font-size: 22px;
+		}
+
+		#resume:hover {
+				background: #d36a4d;
+		}
+
+}
+
+@media only screen and (max-width: 925px) {
+	body {
+		margin: 30px 0px;
+	}
+	#about div:last-child, #nav, #about img, #contact #email-form, #contact h1 {
+			display: none;
+	}
+
+	#about #left {
+		width: 100%;
+		text-align: center;
+		margin: auto;
+	}
+
+	#work div.project-thumb {
+		width: 100%;
+		height: auto;
+		float: left;
+		position: relative;
+		overflow: hidden;
+		cursor: pointer;
+		line-height: 0;
+	}
 }
 
 
