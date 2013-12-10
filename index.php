@@ -117,7 +117,7 @@
 			</div>
 		</div>
 		<div class="project-thumb interactive branding" onclick="loadProject('nitelife')">
-			<img src="images/title-images/nitelife-title.png" alt="NiteLife - Cincinnati Start Up">
+			<img src="images/title-images/nitelife-title.jpg" alt="NiteLife - Cincinnati Start Up">
 			<div class="project-thumb-description">
 				<div>NiteLife</div>
 				<i>Logo, branding, marketing, product design, etc. for my start up company NiteLife.</i>
