@@ -29,7 +29,6 @@
   <script type="text/javascript" src="symbolset/webfonts/ss-social.js"></script>
 
   <script type="text/javascript">
-
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-31092072-1']);
   _gaq.push(['_trackPageview']);
@@ -39,33 +38,25 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-
 </script>
+
+	<script type="text/javascript" src="//use.typekit.net/qtj5tow.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 </head>
 <body>
 
 <header>
-	<img src="images/chad-ackerman-logo_03.png" alt="small-logo_03.png" />
-	<div id="nav">
-		<div id="about-link-top">
-			About
-		</div>
-		<div id="work-link-top">
-			Work
-		</div>
-		<div id="contact-link-top">
-			Contact
-		</div>
-	</div>
+	<img id="logo" src="images/chad-ackerman-logo.png" alt="Chad Ackerman Logo" />
+	<div id="name">Chad Ackerman</div>
 	<div id="fixed-nav">
 		<img src="images/small-logo_03.png" alt="small-logo_03.png" />
 		<div id="nav-right">
-			<div id="about-link">
-				About
-			</div>
 			<div id="work-link">
 				Work
+			</div>
+			<div id="about-link">
+				About
 			</div>
 			<div id="contact-link">
 				Contact
@@ -75,27 +66,8 @@
 </header>
 
 <div id="wrapper">
-	<article id="name">
-		<p>
-			Hello. My name is<br>Chad. I am a Designer.
-		</p>
-	</article>
-	<div id="triangle-down">
-
-	</div>
-	<article id="about">
-		<h1>About</h1>
-		<div id="left">
-			<img src="images/prof-image.png" alt="Chad Ackerman" />
-			<br><a target="_blank" id="resume" href="resume.pdf">Résumé</a>
-		</div>
-		<div>
-			<p>My name is Chad Ackerman and I am a fifth year design major at the University of Cincinnati in the Digital Design program. I have completed five professional co-op rotations with UniRush LLC/RushCard, Gaslight Software LLC, Shutterstock Inc., and Design & Acquisition.</p>
-			<p>Beyond my professional and educational experiences I am also a founder of a local Cincinnati start up, NiteLife which is what I spend most of my "free time" on. I love design, development, business, and anything that can truly make a user's experience better. Feel free to check out my site and get to know a little bit more about me!</p>
-		</div>
-	</article>
 	<article id="work">
-		<h1>Work</h1>
+		<!-- <h1>Work</h1> -->
 		<div id="tag-nav">
 			<div class="all-sort active-sort">All</div>
 			<div class="interactive-sort">Interactive</div>
@@ -172,16 +144,29 @@
 				<i>Kinetic type motion piece on a short scene from the movie Step Brothers.</i>
 			</div>
 		</div>
-		<div class="project-thumb branding" onclick="loadProject('jotts')">
+		<!-- <div class="project-thumb branding" onclick="loadProject('jotts')">
 			<img src="images/title-images/jotts.jpg" alt="Jotts Branding">
 			<div class="project-thumb-description">
 				<div>Jotts</div>
 				<i>Logo and brand identity for a small product start up company out of Columbus.</i>
 			</div>
+		</div> -->
+	</article>
+
+	<article id="about">
+		<div class="section-title">About</div>
+		<div id="left">
+			<img src="images/prof-image.png" alt="Chad Ackerman" />
+			<br><a target="_blank" id="resume" href="resume.pdf">Résumé</a>
+		</div>
+		<div>
+			<p>My name is Chad Ackerman and I am a fifth year design major at the University of Cincinnati in the Digital Design program. I have completed five professional co-op rotations with UniRush LLC/RushCard, Gaslight Software LLC, Shutterstock Inc., and Design & Acquisition.</p>
+			<p>Beyond my professional and educational experiences I am also a founder of a local Cincinnati start up, NiteLife which is what I spend most of my "free time" on. I love design, development, business, and anything that can truly make a user's experience better. Feel free to check out my site and get to know a little bit more about me!</p>
 		</div>
 	</article>
+
 	<article id="contact">
-		<h1>Contact</h1>
+		<div class="section-title">Contact</div>
 		<div id="social-icons" class="ss-icon">
 		  <a target="_blank" href="https://twitter.com/chackerman">twitter</a>
 		  <a target="_blank" href="http://www.linkedin.com/pub/chad-ackerman/36/352/885">linkedin</a>
@@ -193,8 +178,8 @@
 
 	  <div id='email-form' style='width: 400px; margin: auto;'>
 		  <form method='post' action='mailform.php'>
-		  <input name='email' type='text' placeholder='email address'><br>
-		  <input name='subject' type='text' placeholder='subject'><br>
+		  <input name='email' type='text' placeholder='Email'><br>
+		  <input name='subject' type='text' placeholder='Subject'><br>
 		  <br>
 		  <textarea name='message' rows='12'></textarea><br>
 		  <input id='submit' type='submit' name='Submit' value='Submit'>
@@ -202,7 +187,6 @@
 	  </div>
 
 	</article>
-	<div id="project-bg"></div>
 	<div id="project-wrapper">
 		<div id="project-container"></div>
 		<div id="close">Close</div>

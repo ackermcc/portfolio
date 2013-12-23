@@ -3,18 +3,17 @@ $(window).load(function(){
 	var height = $(window).height();
 	var width = $(window).width();
 
-	// HELLO MY NAME IS _____
+	$(window).resize(function() {
+		var height = $(window).height();
+		$("#project-wrapper").css('height', height);
 
-	$("#name").css('height', height - 250);
-
-	// $(window).resize(function() {
-	// 	var height = $(window).height();
-	// 	$("#name").css('height', height - 250);
-	// });
+		var lheight = $(".pc-left").outerHeight(true);
+		$(".pc-right").css('height',lheight);
+	});
 
 	// WAYPOINTS
 
-	$('#nav').waypoint(function(direction) {
+	$('#name').waypoint(function(direction) {
 	  if (direction === "down") {
 	  	$('#fixed-nav').animate({ opacity: 1, top: "0px" }, 'fast');
 	  } else {
@@ -22,8 +21,9 @@ $(window).load(function(){
 	  }
 	});
 
-	$('#about h1').waypoint(function(direction) {
+	$('#about .section-title').waypoint(function(direction) {
 		if (direction === "down") {
+			$("#nav-right div").removeClass("active-nav");
 			$("#about-link").addClass("active-nav");
 		} else {
 			$("#nav-right div").removeClass("active-nav");
@@ -31,7 +31,7 @@ $(window).load(function(){
 		}
 	}, { offset: 'bottom-in-view' });
 
-	$('#work h1').waypoint(function(direction) {
+	$('#name').waypoint(function(direction) {
 		if (direction === "down") {
 			$("#nav-right div").removeClass("active-nav");
 			$("#work-link").addClass("active-nav");
@@ -41,7 +41,7 @@ $(window).load(function(){
 		}
 	}, {offset: 'bottom-in-view'});
 
-	$('#contact h1').waypoint(function(direction) {
+	$('#contact .section-title').waypoint(function(direction) {
 	 	$('#social-icons a:first-child').animate({ opacity: 1}, 'slow');
 		$('#social-icons a:nth-child(2)').delay(100).animate({ opacity: 1}, 'slow');
 		$('#social-icons a:nth-child(3)').delay(200).animate({ opacity: 1}, 'slow');
@@ -53,7 +53,7 @@ $(window).load(function(){
 			$("#contact-link").addClass("active-nav");
 		} else {
 			$("#nav-right div").removeClass("active-nav");
-			$("#work-link").addClass("active-nav");
+			$("#about-link").addClass("active-nav");
 		}
 	}, { offset: 'bottom-in-view' });
 
@@ -124,28 +124,17 @@ $(window).load(function(){
 
 	// PROJECT CONTAINER
 
-	// $(".project-thumb-description").dotdotdot({
-	// 	watch: "window"
-	// });
-
 	$("#project-wrapper").css({
 		height: height
-		// left: width
-	});
-	
-	var wholeHeight = $("html").height();
-
-	$("#project-bg").css({
-		height: wholeHeight
 	});
 
 	$("#work div.project-thumb").on("click", function(){
 		var scrollTop = $(window).scrollTop();
 		$("#project-wrapper").css('top', scrollTop);
-		$("#project-bg").css('display','block').animate({ opacity: 1 }, "fast");
-		$("#project-wrapper").css('display','block').animate({ opacity: 1 }, "fast");
+		$("#project-wrapper").css('display','block').animate({ opacity: 1.0 }, "fast");
+
+		$("body").addClass('stop-scrolling');
 	});
-	
 
 });
 

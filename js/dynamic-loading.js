@@ -1,6 +1,6 @@
 // DYNAMIC PAGE LOAD
 
-	function loadProject(project)
+	function loadProject(project, callback)
 
 	{
 		var xmlhttp;
@@ -11,11 +11,21 @@
 		  if (xmlhttp.readyState==4 && xmlhttp.status==200)
 		    {
 		    document.getElementById("project-container").innerHTML=xmlhttp.responseText;
+		    setTimeout(function(){
+		    	var lheight = $(".pc-left").outerHeight(true);
+		    	var wheight = $(window).height();
+
+		    	if (lheight > wheight) {
+		    		$(".pc-right").css('height',lheight);
+		    	}
+		    	
+		    },500);
 
 		    $("#close, html").on("click", function(){
-				$("#project-bg").animate({ opacity: 0 }, "fast").fadeOut();
-				$("#project-wrapper").animate({ opacity: 0 }, "fast").fadeOut();
+				$("#project-wrapper").animate({ opacity: 0.0 }, "slow").fadeOut();
 				$("html").unbind();
+
+				$("body").removeClass('stop-scrolling');
 			});
 
 			$('#project-container').click(function(event){
@@ -71,4 +81,5 @@
 		//Analytics
 		_gaq.push(['_trackEvent', 'Project', 'click', project]);
 	}
+
 
