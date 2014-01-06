@@ -1,14 +1,16 @@
 body {
 	background: #f0efef;
-	margin: 40px 5%;
 	color: #666;
 	font-weight: 100;
-	line-height: 1.3;
+	line-height: 1.4;
+
+	margin: 0px;
+	padding: 0px;
 }
 
 html {
 	max-width: 1500px;
-	min-width: 1200px;
+	/*min-width: 1200px;*/
 	margin: auto;
 }
 
@@ -31,6 +33,7 @@ a {
 header {
 	text-align: center;
 	overflow: auto;
+	margin-top: 40px;
 }
 
 	header #logo {
@@ -80,14 +83,13 @@ header {
 
 
 #wrapper {
-	margin: 15px auto;
-	/*padding: 35px;*/
+	margin: 20px 5%;
 	overflow: auto;
 }
 
 	.section-title {
 			text-align: center;
-			font-size: 30px;
+			font-size: 34px;
 			margin-bottom: 20px;
 		}
 
@@ -109,37 +111,33 @@ header {
 		}
 
 	#about {
-		width: 70%;
+		width: 65%;
 		margin: 50px auto;
+		padding: 10px 0px;
 		overflow: hidden;
+		text-align: center;
+		font-size: 16px;
 	}
 
-		#about #left {
-			float: left;
-			width: 30%;
-			text-align: center;
-			padding-bottom: 12px;
-		}
-
-		#about div:last-child {
-			float: right;
-			width: 70%;
-		}
-
 		#about img {
-			margin: 28px 0px 18px 0px;
+			margin: 10px 0px 0px 0px;
 		}
 
-		#about p {
-			font-size: 22px;
+		#about p:first-of-type {
+			font-size: 20px;
+			font-weight: normal;
 		}
+
 
 		#resume {
 			color: #fff;
+			width: 100px;
 			background: rgba(44,55,71, 1);
 			padding: 4px 10px;
+			margin: 45px auto 0px auto;
+			display: block;
 			border-radius: 25px;
-			font-size: 22px;
+			font-size: 18px;
 		}
 
 		#resume:hover {
@@ -229,7 +227,9 @@ header {
 	display: none;
 	opacity: 0;
 	z-index: 2000;
-	/*padding: 50px;*/
+
+	overflow-y: scroll; /* has to be scroll, not auto */
+  	-webkit-overflow-scrolling: touch;
 }
 
 	#project-bg {
@@ -249,6 +249,7 @@ header {
 		overflow: auto;
 		width: 100%;
 		height: 100%;
+		clear: both;
 	}
 
 	.pc-left {
@@ -257,11 +258,16 @@ header {
 		padding: 80px 50px;
 	}
 
+		.pc-left div img {
+			width: 100%
+		}
+
 	.pc-left-slider {
 		width: 37%;
 		float: left;
 		margin-left: 13%;
 		padding: 80px 50px;
+		overflow: auto;
 	}
 
 		.flexslider {
@@ -277,6 +283,7 @@ header {
 			border-radius: 25px;
 			margin-bottom: 30px;
 			display: inline-block;
+			font-weight: normal;
 		}
 
 	.pc-right {
@@ -290,6 +297,7 @@ header {
 
 		.pc-right p:first-child {
 			color: #d36a4d;
+			font-weight: normal;
 			font-size: 20px;
 			letter-spacing: 1px;
 			text-transform: uppercase;
@@ -308,6 +316,7 @@ header {
 			margin: 8px 0px;
 			background: rgba(0,0,0, 0.5); 
 			font-size: 16px;
+			font-weight: normal;
 			opacity: 0.7;
 			letter-spacing: 1px;
 			text-transform: uppercase;
@@ -323,6 +332,7 @@ header {
 		background: #d36a4d;
 		width: 80px;
 		font-size: 22px;
+		font-weight: normal;
 	}
 
 
@@ -331,10 +341,11 @@ header {
 }
 
 
-//CONTACT FORM
+/*CONTACT FORM*/
 
-#email-form {
-	
+footer {
+	background: rgba(44,55,71, 1);
+	padding: 30px 0px 70px 0px;
 }
 
 	#email-form input {
@@ -343,6 +354,7 @@ header {
 		padding: 8px 10px;
 		width: 100%;
 		font-size: 20px;
+		margin-top: 10px;
 	}
 
 	#email-form textarea {
@@ -357,8 +369,9 @@ header {
 		float: right;
 		width: 35%;
 		color: #fff;
-		background: rgba(44,55,71, 1);
+		background: #d36a4d;
 		cursor: pointer;
+		border: 0;
 	}
 
 	::-webkit-input-placeholder {
@@ -389,7 +402,7 @@ header {
 		}
 
 			#social-icons a {
-				color: #2c3747;
+				color: #f0efef;
 				opacity: 0;
 			}
 
@@ -400,15 +413,11 @@ header {
 
 /*MOBILE*/
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
 
 	html {
 		max-width: 100%;
 		min-width: 100%;
-	}
-
-	body {
-		margin: 30px 40px;
 	}
 
 	.pc-left, .pc-right {
@@ -463,25 +472,12 @@ header {
 		width: 90%;
 		margin: 50px auto;
 		overflow: hidden;
+		font-size: 16px;
 	}
 
-		#about #left {
-			float: left;
-			width: 30%;
-			text-align: center;
-		}
-
-		#about div:last-child {
-			float: left;
-			width: 70%;
-		}
-
-		#about img {
-			margin: 28px 0px 18px 0px;
-		}
-
-		#about p {
-			font-size: 22px;
+		#about p:first-of-type {
+			font-size: 20px;
+			font-weight: normal;
 		}
 
 		#resume {
@@ -498,12 +494,12 @@ header {
 
 }
 
-@media only screen and (max-width: 925px) {
-	body {
-		margin: 30px 0px;
+@media only screen and (max-width: 800px) {
+	footer {
+		padding: 30px 0px;
 	}
-	#about div:last-child, #nav, #about img, #contact #email-form, #contact h1 {
-			display: none;
+	#nav, #contact #email-form, #contact h1, #about br, #tag-nav {
+		display: none;
 	}
 
 	#about #left {
@@ -520,6 +516,21 @@ header {
 		overflow: hidden;
 		cursor: pointer;
 		line-height: 0;
+	}
+
+	.pc-left {
+		padding: 40px 20px;
+	}
+
+	.pc-right {
+		overflow: hidden;
+		height: auto;
+		padding: 30px 20px 60px 20px;
+	}
+
+	#social-icons a {
+		color: #f0efef;
+		opacity: 1;
 	}
 }
 

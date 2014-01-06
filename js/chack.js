@@ -4,11 +4,12 @@ $(window).load(function(){
 	var width = $(window).width();
 
 	$(window).resize(function() {
-		var height = $(window).height();
+		var height = $(window).outerHeight(true);
 		$("#project-wrapper").css('height', height);
 
 		var lheight = $(".pc-left").outerHeight(true);
 		$(".pc-right").css('height',lheight);
+
 	});
 
 	// WAYPOINTS
@@ -21,7 +22,7 @@ $(window).load(function(){
 	  }
 	});
 
-	$('#about .section-title').waypoint(function(direction) {
+	$('#about img').waypoint(function(direction) {
 		if (direction === "down") {
 			$("#nav-right div").removeClass("active-nav");
 			$("#about-link").addClass("active-nav");
@@ -41,7 +42,7 @@ $(window).load(function(){
 		}
 	}, {offset: 'bottom-in-view'});
 
-	$('#contact .section-title').waypoint(function(direction) {
+	$('#contact #social-icons').waypoint(function(direction) {
 	 	$('#social-icons a:first-child').animate({ opacity: 1}, 'slow');
 		$('#social-icons a:nth-child(2)').delay(100).animate({ opacity: 1}, 'slow');
 		$('#social-icons a:nth-child(3)').delay(200).animate({ opacity: 1}, 'slow');

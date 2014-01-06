@@ -105,7 +105,9 @@ elseif ($_GET["project"] == 'baseball') {
 echo "
 
 <div class='pc-left'>
-	<img src='images/baseball-full.jpg' alt='Baseball Visualizer' />
+	<div>
+		<a target='_blank' href='http://chackerman.com/baseball/index.html'><img src='images/baseball-full.jpg' alt='Baseball Visualizer' /></a>
+	</div>
 </div>
 <div class='pc-right'>
 	<p>Baseball Data Visualizer</p>
@@ -152,6 +154,28 @@ echo "
 	<div class='description-title'>Client </div><span>School</span>
 	<div class='description-title'>Date </div><span>June 2012</span>
 	<div class='description-title'>Tools/Skills </div><span>XCode, UI, Photoshop</span>
+</div>
+
+";
+}
+
+elseif ($_GET["project"] == 'gg') {
+	
+echo "
+
+<div class='pc-left'>
+	<div>
+		<a target='_blank' href='http://greatestgood.org/'><img src='images/gg/gg-full.png' /></a>
+	</div>
+</div>
+<div class='pc-right'>
+	<p>Greatest Good</p>
+	<p>Greatest Good is a non-profit organization that is working towards revolutionizing how influencers donate their time and money. I am working with them on branding and their web experience from design to front end development. I designed and built this splash page as a placeholder until the full site is complete. Through a simple experience and icon animations the user is able to have a basic understanding of what Greatest Good is.
+	</p>
+	<a class='site-link' target='_blank' href='http://greatestgood.org/'>View Full Site</a>
+	<div class='description-title'>Client </div><span>Greatest Good</span>
+	<div class='description-title'>Date </div><span>October 2013</span>
+	<div class='description-title'>Tools/Skills </div><span>Branding, UI, CSS Animations, HTML 5 Canvas, JQuery</span>
 </div>
 
 ";

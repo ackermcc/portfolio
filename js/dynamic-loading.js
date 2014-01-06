@@ -21,7 +21,7 @@
 		    	
 		    },500);
 
-		    $("#close, html").on("click", function(){
+		    $("#close").on("click", function(){
 				$("#project-wrapper").animate({ opacity: 0.0 }, "slow").fadeOut();
 				$("html").unbind();
 

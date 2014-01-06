@@ -9,7 +9,7 @@
   <meta charset="utf-8" />
   <link rel="SHORTCUT ICON" href="favicon.jpg">
   <!-- Set the viewport width to device width for mobile -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, height=device-height">
 
   <title>Chad Ackerman | Digital Designer</title>
 
@@ -109,6 +109,13 @@
 				<i>iPad application for increasing awareness on sustainability at the University of Cincinnati.</i>
 			</div>
 		</div>
+		<div class="project-thumb interactive branding" onclick="loadProject('gg')">
+			<img src="images/title-images/gg-title.jpg" alt="Greatest Good - Splash Page">
+			<div class="project-thumb-description">
+				<div>Greatest Good</div>
+				<i>Splash page for a non-profit start up that is launching early 2014.</i>
+			</div>
+		</div>
 		<div class="project-thumb motion" onclick="loadProject('ssTutorial')">
 			<img src="images/title-images/ss-tutorials.jpg" alt="Shutterstock Motion Tutorials">
 			<div class="project-thumb-description">
@@ -154,19 +161,28 @@
 	</article>
 
 	<article id="about">
-		<div class="section-title">About</div>
-		<div id="left">
-			<img src="images/prof-image.png" alt="Chad Ackerman" />
-			<br><a target="_blank" id="resume" href="resume.pdf">Résumé</a>
-		</div>
+		<!-- <div class="section-title">About</div> -->
 		<div>
-			<p>My name is Chad Ackerman and I am a fifth year design major at the University of Cincinnati in the Digital Design program. I have completed five professional co-op rotations with UniRush LLC/RushCard, Gaslight Software LLC, Shutterstock Inc., and Design & Acquisition.</p>
-			<p>Beyond my professional and educational experiences I am also a founder of a local Cincinnati start up, NiteLife which is what I spend most of my "free time" on. I love design, development, business, and anything that can truly make a user's experience better. Feel free to check out my site and get to know a little bit more about me!</p>
+			<img src="images/prof-image-circle.png" alt="Chad Ackerman" />
+
+			<p>Nearly 2 years of professional experience in Digital Design,<br> with a focus in UI / UX Design. I have been involved in the very initial steps of products<br> and marketing campaigns, all the way to their production and launch.</p>
+
+			<p>I am a University of Cincinnati Digital Design student with professional and<br> independent contracting experience over the last 3 years. I am graduating in April 2014<br> and in search of a full-time or long-term contract position in the field of UI / UX Design.</p>
+
+			<a target="_blank" id="resume" href="resume.pdf">Résumé</a>
 		</div>
 	</article>
 
+	
+	<div id="project-wrapper">
+		<div id="project-container"></div>
+		<div id="close">Close</div>
+	</div>
+</div>
+
+<footer>
 	<article id="contact">
-		<div class="section-title">Contact</div>
+		<!-- <div class="section-title">Contact</div> -->
 		<div id="social-icons" class="ss-icon">
 		  <a target="_blank" href="https://twitter.com/chackerman">twitter</a>
 		  <a target="_blank" href="http://www.linkedin.com/pub/chad-ackerman/36/352/885">linkedin</a>
@@ -187,14 +203,6 @@
 	  </div>
 
 	</article>
-	<div id="project-wrapper">
-		<div id="project-container"></div>
-		<div id="close">Close</div>
-	</div>
-</div>
-
-<footer>
-
 </footer>
 
 	<script type="text/javascript" src="js/dynamic-loading.js"></script>
