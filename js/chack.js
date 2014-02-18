@@ -7,8 +7,8 @@ $(window).load(function(){
 		var height = $(window).outerHeight(true);
 		$("#project-wrapper").css('height', height);
 
-		var lheight = $(".pc-left").outerHeight(true);
-		$(".pc-right").css('height',lheight);
+		// var lheight = $(".pc-left").outerHeight(true);
+		// $(".pc-right").css('height',lheight);
 
 	});
 

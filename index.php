@@ -74,11 +74,11 @@
 			<div class="motion-sort">Motion</div>
 			<div class="branding-sort">Branding</div>
 		</div>
-		<div class="project-thumb interactive" onclick="loadProject('sfc')">
-			<img src="images/title-images/sfc-title.jpg" alt="Summerfair Cincinnati Survey">
+		<div class="project-thumb interactive branding" onclick="loadProject('nitelife')">
+			<img src="images/title-images/nitelife-title.jpg" alt="NiteLife - Cincinnati Start Up">
 			<div class="project-thumb-description">
-				<div>Summerfair Cincinnati Survey App</div>
-				<i>Survey application built for in-event surveying of customers for user data.</i>
+				<div>NiteLife</div>
+				<i>Logo, branding, marketing, product design, etc. for my start up company NiteLife.</i>
 			</div>
 		</div>
 		<div class="project-thumb interactive motion branding" onclick="loadProject('nom')">
@@ -88,11 +88,11 @@
 				<i>Survey application built for in-event surveying of customers for user data.</i>
 			</div>
 		</div>
-		<div class="project-thumb interactive branding" onclick="loadProject('nitelife')">
-			<img src="images/title-images/nitelife-title.jpg" alt="NiteLife - Cincinnati Start Up">
+		<div class="project-thumb interactive" onclick="loadProject('sfc')">
+			<img src="images/title-images/sfc-title.jpg" alt="Summerfair Cincinnati Survey">
 			<div class="project-thumb-description">
-				<div>NiteLife</div>
-				<i>Logo, branding, marketing, product design, etc. for my start up company NiteLife.</i>
+				<div>Summerfair Cincinnati Survey App</div>
+				<i>Survey application built for in-event surveying of customers for user data.</i>
 			</div>
 		</div>
 		<div class="project-thumb interactive" onclick="loadProject('baseball')">
@@ -130,13 +130,13 @@
 				<i>Product release and demonstration video for Shutterstock's new visual search tool: Spectrum.</i>
 			</div>
 		</div>
-		<div class="project-thumb motion" onclick="loadProject('maverick')">
+		<!-- <div class="project-thumb motion" onclick="loadProject('maverick')">
 			<img src="images/title-images/maverick.jpg" alt="Maverick Title Sequence">
 			<div class="project-thumb-description">
 				<div>Maverick</div>
 				<i>Recreation of the Title Sequence for the movie Maverick.</i>
 			</div>
-		</div>
+		</div> -->
 		<div class="project-thumb motion" onclick="loadProject('angryBirds')">
 			<img src="images/title-images/angry-birds.jpg" alt="Angry Birds - Stop Motion">
 			<div class="project-thumb-description">

@@ -4,26 +4,14 @@ if ($_GET["project"] == 'sfc') {
 
 echo "
 
-<div class='pc-left-slider'>
-	<div class='flexslider'>
-	  <ul class='slides'>
-	    <li>
-	      <img src='images/sfc/sfc-1_03.png' />
-	    </li>
-	    <li>
-	      <img src='images/sfc/sfc-2_03.png' />
-	    </li>
-	    <li>
-	      <img src='images/sfc/sfc-3_03.png' />
-	    </li>
-	    <li>
-	      <img src='images/sfc/sfc-4_03.png' />
-	    </li>
-	    <li>
-	      <img src='images/sfc/sfc-6_03.png' />
-	    </li>
-	  </ul>
-	</div>
+<div class='pc-left'>
+  <img src='images/sfc/sfc-2_03.png' />
+
+  <img src='images/sfc/sfc-3_03.png' />
+
+  <img src='images/sfc/sfc-4_03.png' />
+
+  <img src='images/sfc/sfc-6_03.png' />
 </div>
 <div class='pc-right'>
 	<p>Summerfair Cincinnati</p>
@@ -65,26 +53,11 @@ elseif ($_GET["project"] == 'nitelife') {
 	
 echo "
 
-<div class='pc-left-slider'>
-	<div class='flexslider'>
-	  <ul class='slides'>
-	    <li>
-	      <img src='images/nitelife/1.png' />
-	    </li>
-	    <li>
-	      <img src='images/nitelife/2.png' />
-	    </li>
-	    <li>
-	      <img src='images/nitelife/3.png' />
-	    </li>
-	    <li>
-	      <img src='images/nitelife/4.png' />
-	    </li>
-	    <li>
-	      <img src='images/nitelife/5.png' />
-	    </li>
-	  </ul>
-	</div>
+<div class='pc-left'>
+	<img src='images/nitelife/buzz_02.png' />
+	<img src='images/nitelife/nav_03.png' />
+	<img src='images/nitelife/bar-top_01.png' />
+	<img src='images/nitelife/bar-links_00.png' />
 </div>
 <div class='pc-right'>
 	<p>NiteLife</p>

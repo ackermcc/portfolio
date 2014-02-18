@@ -6,6 +6,7 @@ body {
 
 	margin: 0px;
 	padding: 0px;
+	/*-webkit-font-smoothing:antialiased;*/
 }
 
 html {
@@ -258,8 +259,9 @@ header {
 		padding: 80px 50px;
 	}
 
-		.pc-left div img {
-			width: 100%
+		.pc-left img {
+			width: 100%;
+			margin-bottom: 30px;
 		}
 
 	.pc-left-slider {
